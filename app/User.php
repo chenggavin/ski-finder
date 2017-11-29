@@ -30,6 +30,6 @@ class User extends Authenticatable
 
     public function resorts()
     {
-        return $this->belongsToMany('App\Resorts');
+        return $this->belongsToMany('App\Resort', 'resort_user','user_id','resort_id');
     }
 }

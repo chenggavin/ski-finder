@@ -19,4 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+Route::get('/resort/search', 'ResortController@search');
+Route::post('/resort/{resort_id}', 'ResortController@store');
+
 Route::resource('/resort', 'ResortController');
+

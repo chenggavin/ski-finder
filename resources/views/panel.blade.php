@@ -7,7 +7,9 @@
 
     <div class="container">
 
-
+    @if (empty($resorts))
+    Add your first resort!
+    @else
         @foreach ($resorts->chunk(4) as $resorts)
             <div class="row">
                 @foreach ($resorts as $resort)
@@ -26,8 +28,9 @@
         @endforeach
 
     </div> <!-- end container -->
+    @endif
 
-
+    <a href="/resort/search">Add More</a>
 
 
 

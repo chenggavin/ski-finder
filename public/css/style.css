@@ -18,3 +18,7 @@ li {
 .attribute {
 	font-weight: bold;
 }
+
+.add {
+	display: inline-block;
+}

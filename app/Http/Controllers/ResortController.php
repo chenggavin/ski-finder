@@ -13,8 +13,9 @@ class ResortController extends Controller
      */
     public function index()
     {
-        $resorts = \App\Resort::all();
-        // return $resorts;
+        $resorts = \Auth::user()->resorts()->get();
+        // return \auth::user();
+        
         return view('panel', compact('resorts'));
     }
 
@@ -34,9 +35,13 @@ class ResortController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $resort_id)
     {
-        //
+        $user = \Auth::user();
+        
+        $user->resorts()->attach($resort_id);
+
+        return redirect('/resort');
     }
 
     /**
@@ -83,6 +88,34 @@ class ResortController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+    }
+
+    public function search() {
+
+        $singleResort = \App\Resort::all();
+
+
+        
+        $userResorts = \Auth::user()->resorts()->get();
+        
+        $currentResortsIds=[];
+        foreach ($userResorts as $ids) {
+            array_push($currentResortsIds, $ids->id);
+        }
+
+       
+
+        $resorts = \App\Resort::whereNotIn('id', $currentResortsIds)->get();
+        
+        return view('search', compact('resorts'));
     }
 }
+
+
+
+
+
+
+
+

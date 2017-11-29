@@ -9,7 +9,7 @@ class Resort extends Model {
 
     public function users() {
 
-        return $this->belongsToMany('App\User', 'resort_user', 'resorts_id', 'user_id');
+        return $this->belongsToMany('App\User', 'resort_user', 'resort_id', 'user_id');
 
     }
 }
