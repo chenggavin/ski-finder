@@ -9,29 +9,32 @@
 
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script>
-	console.log('h/i');
-
-    $.ajax({
-        url: "https://api.weatherunlocked.com/api/snowreport/13003?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647",
-        type: "GET",
-        success: function (parsedResponse, statusText, jqXhr) {
-
-            console.log(parsedResponse, statusText);
 
 
-        },
-        error: function (error) {
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+		$.ajax({  
+			url: "https://api.weatherunlocked.com/api/snowreport/13003?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647",   
+		  	headers: {          
+		    Accept: "application/json; charset=utf-8" 
+		  },     
+		  data: "data",    
+		  type: "GET",
+        	success: function (parsedResponse, statusText, jqXhr) {
 
-            console.log(error);
-        }
+            console.log(parsedResponse);
+            console.log(parsedResponse.resortname);
+            console.log(parsedResponse.resortcountry);
 
-    });
+        	},
+		    
+		  
+		  error : function() {
+		  	alert('dang it');
+		  }
+		});
+    </script>
 
-
-</script>
 
 
 
