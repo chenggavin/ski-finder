@@ -16,6 +16,7 @@ class CreateResortsTable extends Migration
         Schema::create('resorts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
+            $table->string('slug');
             $table->text('location')->nullable();
             $table->boolean('open');
             $table->string('conditions')->nullable();

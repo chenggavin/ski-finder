@@ -13,6 +13,7 @@ class ResortsTableSeeder extends Seeder
     {
         DB::table('resorts')->insert([
             'name' => 'Copper Mountain',
+            'slug' => 'copper-mountain',
             'location' => 'Copper Mountain, Colorado',
             'open' => true,
             'conditions' => 'Sunny',
@@ -25,6 +26,7 @@ class ResortsTableSeeder extends Seeder
         ]);
         DB::table('resorts')->insert([
             'name' => 'Paoli Peaks',
+            'slug' => 'paoli-peaks',
             'location' => 'Paoli, Indiana',
             'open' => false,
             'conditions' => 'Closed',
@@ -37,6 +39,7 @@ class ResortsTableSeeder extends Seeder
         ]);
         DB::table('resorts')->insert([
             'name' => 'SnowShoe',
+            'slug' => 'showshoe'
             'location' => 'Snowshoe, West Virginia',
             'open' => true,
             'conditions' => 'Sunny',
@@ -49,6 +52,7 @@ class ResortsTableSeeder extends Seeder
         ]);
         DB::table('resorts')->insert([
             'name' => 'Sugar Mountain',
+            'slug' => 'sugar-mountain',
             'location' => 'Sugar Mountain, North Carolina',
             'open' => true,
             'conditions' => 'Sunny',
