@@ -97,20 +97,15 @@ class ResortController extends Controller
 
     public function search() {
 
-        $singleResort = \App\Resort::all();
-
-
-        
+    
         $userResorts = \Auth::user()->resorts()->get();
-        
         $currentResortsIds=[];
+
         foreach ($userResorts as $ids) {
             array_push($currentResortsIds, $ids->id);
         }
 
-       
-
-        $resorts = \App\Resort::whereNotIn('id', $currentResortsIds)->get();
+        $resorts = \App\Resort::whereNotIn('id', $currentResortsIds)->orderBy('name', 'asc')->get();
         
         return view('search', compact('resorts'));
     }

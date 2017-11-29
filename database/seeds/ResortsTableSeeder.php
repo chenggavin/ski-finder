@@ -22,6 +22,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '8',
+            'img' => 'copper.png'
 
         ]);
         DB::table('resorts')->insert([
@@ -35,7 +36,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '0',
-            'img'=> 'paoli.jpg'
+            'img' => 'paoli.jpg'
 
         ]);
         DB::table('resorts')->insert([
@@ -49,6 +50,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '3/14',
+            'img' => 'snowshoe.png'
 
         ]);
         DB::table('resorts')->insert([
@@ -64,6 +66,32 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '2/8',
             'img' => 'sugar.png'
 
+        ]);
+        DB::table('resorts')->insert([
+            'name' => 'Big Sky Resort',
+            'slug' => 'big-sky',
+            'location' => 'Big Sky, Montana',
+            'open' => true,
+            'conditions' => 'Sunny',
+            'new_snow_in' => '2.0',
+            'pct_open' => '19.7',
+            'upper_snow' =>null,
+            'lower_snow' =>null,
+            'lifts_open' => '9/36',
+            'img' => 'bigsky.jpg'
+        ]);
+        DB::table('resorts')->insert([
+            'name' => 'Perfect North',
+            'slug' => 'perfect-north',
+            'location' => 'Lawrenceburg, Indiana',
+            'open' => false,
+            'conditions' => 'Cloudy',
+            'new_snow_in' => '0.0',
+            'pct_open' => '0.0',
+            'upper_snow' =>null,
+            'lower_snow' =>null,
+            'lifts_open' => '0/5',
+            'img' => 'perfectnorth.png'
         ]);
 
 

@@ -20,7 +20,6 @@
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
                             <button class="delete btn btn-xs btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
-                        
                         </form>
 
                             <div class="caption text-center">
@@ -40,8 +39,7 @@
 
     </div> <!-- end container -->
     @endif
-
-    <a href="/resort/search">Add More</a>
+<h3><a class="addmore" href="/resort/search">Add Resort</a></h3>
 
 
 
@@ -49,7 +47,7 @@
 
 			<!-- Api Call for Arosa, Switzerland -->
 
-<!-- <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 <script type="text/javascript">
 	$.ajax({  
 		url: "https://api.weatherunlocked.com/api/snowreport/13003?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647",   
@@ -71,7 +69,7 @@
 	  	alert('dang it');
 	  }
 	});
-</script> -->
+</script>
 
 
 
