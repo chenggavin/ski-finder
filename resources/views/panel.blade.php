@@ -16,9 +16,12 @@
                     <div class="col-md-3">
                         <div class="thumbnail">
 
-                        <i class="fa fa-times delete" aria-hidden="true"></i>
+                        <form method="post" action="/resort/{{ $resort->id }}/delete">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <button><i class="fa fa-times delete" aria-hidden="true"></i></button>
                         
-
+                        </form>
 
 
 

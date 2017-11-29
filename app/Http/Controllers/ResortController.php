@@ -86,9 +86,13 @@ class ResortController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($resort_id)
     {
+        $user = \Auth::user();
+        
+        $user->resorts()->detach($resort_id);
 
+        return redirect('/resort');
     }
 
     public function search() {

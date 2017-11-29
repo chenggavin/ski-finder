@@ -22,6 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/resort/search', 'ResortController@search');
 Route::post('/resort/{resort_id}', 'ResortController@store');
-
+Route::delete('/resort/{resort_id}/delete', 'ResortController@destroy');
 Route::resource('/resort', 'ResortController');
 
