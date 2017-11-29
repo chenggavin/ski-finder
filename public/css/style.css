@@ -27,3 +27,14 @@ li {
 	float: right;
 	color:red;
 }
+
+img {
+	
+	width: 200px;
+}
+
+.btn {
+	border: none;
+    outline:none;
+    background-color: #d9e1e8;
+}

@@ -35,6 +35,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '0',
+            'img'=> 'paoli.jpg'
 
         ]);
         DB::table('resorts')->insert([
@@ -61,6 +62,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '2/8',
+            'img' => 'sugar.png'
 
         ]);
 

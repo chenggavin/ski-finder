@@ -19,24 +19,24 @@
                         <form method="post" action="/resort/{{ $resort->id }}/delete">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
-                            <button><i class="fa fa-times delete" aria-hidden="true"></i></button>
+                            <button class="delete btn btn-xs btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
                         
                         </form>
 
-
-
-
                             <div class="caption text-center">
-                                <a href="{{ url('resort', [$resort->slug]) }}"><img src="{{ asset('img/' . $resort->image) }}" alt="image" class="img-responsive"></a>
+                                <a href="{{ url('resort', [$resort->slug]) }}"><img src="{{ asset('img/' . $resort->img) }}" alt="image" class="img-responsive"></a>
                                 <a href="{{ url('resort', [$resort->slug]) }}"><h3>{{ $resort->name }}</h3>
                                 <p>{{ $resort->location }}</p>
                                 </a>
                             </div> <!-- end caption -->
                         </div> <!-- end thumbnail -->
                     </div> <!-- end col-md-3 -->
+
                 @endforeach
             </div> <!-- end row -->
+            
         @endforeach
+        
 
     </div> <!-- end container -->
     @endif

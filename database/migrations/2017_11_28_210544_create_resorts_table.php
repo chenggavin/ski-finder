@@ -26,6 +26,7 @@ class CreateResortsTable extends Migration
             $table->decimal('lower_snow', 3,1)->nullable();
             $table->string('last_snow')->nullable();
             $table->string('lifts_open')->nullable();
+            $table->string('img')->nullable();
             $table->timestamps();
         });
     }
