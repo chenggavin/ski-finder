@@ -16,15 +16,15 @@ class CreateResortsTable extends Migration
         Schema::create('resorts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('country')->nullable();
-            $table->boolean('status');
+            $table->text('location')->nullable();
+            $table->boolean('open');
             $table->string('conditions')->nullable();
             $table->decimal('new_snow_in', 3,1)->nullable();
             $table->decimal('pct_open', 3,1)->nullable();
             $table->decimal('upper_snow', 3,1)->nullable();
             $table->decimal('lower_snow', 3,1)->nullable();
             $table->string('last_snow')->nullable();
-            $table->integer('lifts_open')->nullable();
+            $table->string('lifts_open')->nullable();
             $table->timestamps();
         });
     }

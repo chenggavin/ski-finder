@@ -13,7 +13,9 @@ class ResortController extends Controller
      */
     public function index()
     {
-        return view('panel');
+        $resorts = \App\Resort::all();
+        // return $resorts;
+        return view('panel', compact('resorts'));
     }
 
     /**
