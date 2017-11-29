@@ -3,7 +3,7 @@
 @section('content')
 
 
-
+<link href="/css/style.css" rel="stylesheet">
 
     <div class="container">
 
@@ -15,6 +15,14 @@
                 @foreach ($resorts as $resort)
                     <div class="col-md-3">
                         <div class="thumbnail">
+
+                        <i class="fa fa-times delete" aria-hidden="true"></i>
+                        
+
+
+
+
+
                             <div class="caption text-center">
                                 <a href="{{ url('resort', [$resort->slug]) }}"><img src="{{ asset('img/' . $resort->image) }}" alt="image" class="img-responsive"></a>
                                 <a href="{{ url('resort', [$resort->slug]) }}"><h3>{{ $resort->name }}</h3>

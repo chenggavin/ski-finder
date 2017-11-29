@@ -22,3 +22,8 @@ li {
 .add {
 	display: inline-block;
 }
+
+.delete {
+	float: right;
+	color:red;
+}
