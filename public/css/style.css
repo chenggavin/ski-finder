@@ -1,6 +1,20 @@
 
 
 
-h1 {
+h1, h5 {
 	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 18px;
+	margin-bottom: 2%;
+}
+
+
+.attribute {
+	font-weight: bold;
 }
