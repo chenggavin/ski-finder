@@ -14,8 +14,8 @@
                     <div class="col-md-3">
                         <div class="thumbnail">
                             <div class="caption text-center">
-                                <a href="{{ url('menu', [$resort->slug]) }}"><img src="{{ asset('img/' . $resort->image) }}" alt="image" class="img-responsive"></a>
-                                <a href="{{ url('menu', [$resort->slug]) }}"><h3>{{ $resort->name }}</h3>
+                                <a href="{{ url('resort', [$resort->slug]) }}"><img src="{{ asset('img/' . $resort->image) }}" alt="image" class="img-responsive"></a>
+                                <a href="{{ url('resort', [$resort->slug]) }}"><h3>{{ $resort->name }}</h3>
                                 <p>{{ $resort->location }}</p>
                                 </a>
                             </div> <!-- end caption -->
@@ -34,7 +34,7 @@
 
 
 			<!-- Api Call for Arosa, Switzerland -->
-			
+
 <!-- <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 <script type="text/javascript">
 	$.ajax({  

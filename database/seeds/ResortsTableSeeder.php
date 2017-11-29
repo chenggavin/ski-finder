@@ -39,7 +39,7 @@ class ResortsTableSeeder extends Seeder
         ]);
         DB::table('resorts')->insert([
             'name' => 'SnowShoe',
-            'slug' => 'showshoe'
+            'slug' => 'showshoe',
             'location' => 'Snowshoe, West Virginia',
             'open' => true,
             'conditions' => 'Sunny',
