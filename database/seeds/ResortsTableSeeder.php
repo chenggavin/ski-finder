@@ -22,7 +22,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '8',
-            'img' => 'copper.png'
+            'img' => 'copper.png',
+            'website' => 'http://www.coppercolorado.com/'
 
         ]);
         DB::table('resorts')->insert([
@@ -36,7 +37,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '0',
-            'img' => 'paoli.jpg'
+            'img' => 'paoli.jpg',
+            'website' => 'http://www.paolipeaks.com/'
 
         ]);
         DB::table('resorts')->insert([
@@ -50,7 +52,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '3/14',
-            'img' => 'snowshoe.png'
+            'img' => 'snowshoe.png',
+            'website' => 'https://www.snowshoemtn.com/'
 
         ]);
         DB::table('resorts')->insert([
@@ -64,7 +67,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '2/8',
-            'img' => 'sugar.png'
+            'img' => 'sugar.png',
+            'website' => 'http://www.skisugar.com/'
 
         ]);
         DB::table('resorts')->insert([
@@ -78,7 +82,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '9/36',
-            'img' => 'bigsky.jpg'
+            'img' => 'bigsky.jpg',
+            'website' => 'https://bigskyresort.com/'
         ]);
         DB::table('resorts')->insert([
             'name' => 'Perfect North',
@@ -91,7 +96,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>null,
             'lower_snow' =>null,
             'lifts_open' => '0/5',
-            'img' => 'perfectnorth.png'
+            'img' => 'perfectnorth.png',
+            'website' => 'https://perfectnorth.com/'
         ]);
         DB::table('resorts')->insert([
             'name' => 'Val Thorens',
@@ -104,7 +110,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>11.8,
             'lower_snow' =>10,
             'lifts_open' => '24/32',
-            'img' => 'valthorens.jpg'
+            'img' => 'valthorens.jpg',
+            'website' => 'http://www.valthorens.com/en/home-page.1.html'
         ]);
 
 
