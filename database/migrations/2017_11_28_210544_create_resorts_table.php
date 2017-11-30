@@ -28,6 +28,7 @@ class CreateResortsTable extends Migration
             $table->string('lifts_open')->nullable();
             $table->string('img')->nullable();
             $table->text('website')->nullable();
+            $table->text('map');
             $table->timestamps();
         });
     }

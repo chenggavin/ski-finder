@@ -19,7 +19,7 @@
                         <form method="post" action="/resort/{{ $resort->id }}/delete">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
-                            <button class="delete btn btn-xs btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button class="delete btn btn-xs btn-primary x"><i class="fa fa-times" aria-hidden="true"></i></button>
                         </form>
 
                             <div class="caption text-center">

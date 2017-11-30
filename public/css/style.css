@@ -78,6 +78,30 @@ h3 {
 
 }
 
+.x {
+	color:white;
+}
+
+.back {
+	margin-left: 9%;
+}
+
+iframe {
+	border:1px solid lightgrey; 
+	float:right; 
+	margin-right:3%
+}
+@media only screen and (max-device-width: 480px) {
+	.resortTable {
+		width: 70%;
+		margin: auto;
+	}
+	iframe {
+		margin-right: 10%;
+		margin-bottom: 20%;
+		margin-top: 10%;
+	}
+}
 
 
 

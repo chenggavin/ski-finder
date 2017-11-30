@@ -23,7 +23,8 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>null,
             'lifts_open' => '8',
             'img' => 'copper.png',
-            'website' => 'http://www.coppercolorado.com/'
+            'website' => 'http://www.coppercolorado.com/',
+            'map' => 'ChIJje2Mxv5faocRGxb87e3-W8o'
 
         ]);
         DB::table('resorts')->insert([
@@ -38,7 +39,8 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>0.0,
             'lifts_open' => '0',
             'img' => 'paoli.jpg',
-            'website' => 'http://www.paolipeaks.com/'
+            'website' => 'http://www.paolipeaks.com/',
+            'map' => 'ChIJrWRDhyahbogRzpm8bG0R1Ew'
 
         ]);
         DB::table('resorts')->insert([
@@ -53,7 +55,8 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>null,
             'lifts_open' => '3/14',
             'img' => 'snowshoe.png',
-            'website' => 'https://www.snowshoemtn.com/'
+            'website' => 'https://www.snowshoemtn.com/',
+            'map' => 'ChIJmeNbQsdwS4gRvQIya65j8o8'
 
         ]);
         DB::table('resorts')->insert([
@@ -68,7 +71,8 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>null,
             'lifts_open' => '2/8',
             'img' => 'sugar.png',
-            'website' => 'http://www.skisugar.com/'
+            'website' => 'http://www.skisugar.com/',
+            'map' => 'ChIJ8bC5VyztUIgRjOY8g-tB9mI'
 
         ]);
         DB::table('resorts')->insert([
@@ -83,7 +87,8 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>null,
             'lifts_open' => '9/36',
             'img' => 'bigsky.jpg',
-            'website' => 'https://bigskyresort.com/'
+            'website' => 'https://bigskyresort.com/',
+            'map' => 'ChIJNSw3_WUOUFMRyiuLqjtx-JU'
         ]);
         DB::table('resorts')->insert([
             'name' => 'Perfect North',
@@ -97,7 +102,8 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>null,
             'lifts_open' => '0/5',
             'img' => 'perfectnorth.png',
-            'website' => 'https://perfectnorth.com/'
+            'website' => 'https://perfectnorth.com/',
+            'map' => 'ChIJ3-FGn0fUQYgR44dm92UDQHo'
         ]);
         DB::table('resorts')->insert([
             'name' => 'Val Thorens',
@@ -111,7 +117,24 @@ class ResortsTableSeeder extends Seeder
             'lower_snow' =>10,
             'lifts_open' => '24/32',
             'img' => 'valthorens.jpg',
-            'website' => 'http://www.valthorens.com/en/home-page.1.html'
+            'website' => 'http://www.valthorens.com/en/home-page.1.html',
+            'map' => 'ChIJcXAmAmCGiUcRM_PuwW28x44'
+        ]);
+
+        DB::table('resorts')->insert([
+            'name' => 'Vail',
+            'slug' => 'vail',
+            'location' => 'Vail, Colorado',
+            'open' => true,
+            'conditions' => 'Clear',
+            'new_snow_in' => '0.8',
+            'pct_open' => '1.0',
+            'upper_snow' =>18.0,
+            'lower_snow' =>10,
+            'lifts_open' => '4/31',
+            'img' => 'vail.jpg',
+            'website' => 'https://www.vail.com/',
+            'map' => 'ChIJB89dUQVwaocRxKOafh_AzMk'
         ]);
 
 
