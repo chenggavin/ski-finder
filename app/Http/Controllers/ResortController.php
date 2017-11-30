@@ -96,7 +96,7 @@ class ResortController extends Controller
         $resortUpperSnow = $apiResult['uppersnow_in'];
         $resortPctOpen = $apiResult['pctopen'];
         $resortLastSnow = $apiResult['lastsnow'];
-
+        
         $arosa = \App\Resort::where('id', 7)->update([
             'conditions' => $resortConditions, 
             'new_snow_in' => $resortNewSnow,

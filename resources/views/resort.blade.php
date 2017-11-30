@@ -21,6 +21,7 @@
 	<li><span class="attribute">New Snow last 24hrs(in):</span>  {{ $resort->new_snow_in }}"</li>
 	<li><span class="attribute">Upper Snow(in):</span>  {{ $resort->upper_snow }}</li>
 	<li><span class="attribute">Upper Snow(in):</span>  {{ $resort->lower_snow }}</li>
+	<li><a href="{{ $resort->website }}"><span class="attribute">Visit Website!</span></a></li>
 </ul>
 
 
