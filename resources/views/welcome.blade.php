@@ -25,7 +25,7 @@
                 position: absolute;
                 top: 50%; 
                 margin-top:-120px;
-                left: 51%; 
+                left: 52%; 
                 margin-left:-200px;
                 font-size: 50px;
             }
