@@ -38,7 +38,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand title" href="{{ url('/') }}">
+                    <a class="navbar-brand title" href="{{ url('/home') }}">
                         {{ config('app.name', 'SlopeCast') }}
                     </a>
                 </div>

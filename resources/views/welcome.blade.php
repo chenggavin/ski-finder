@@ -8,7 +8,8 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+
 
         <!-- Styles -->
         <style>
@@ -20,39 +21,32 @@
                 height: 100vh;
                 margin: 0;
             }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
+            .title {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                top: 50%; 
+                margin-top:-120px;
+                left: 51%; 
+                margin-left:-200px;
+                font-size: 50px;
+            }
+
+            .center {
+                position: absolute;
+                top: 60%; 
+                margin-top:-100px;
+                left: 50%; 
+                margin-left:-200px
             }
 
             .content {
                 text-align: center;
             }
 
-            .title {
-                font-size: 84px;
-            }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -65,9 +59,9 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+            <h1 class="title">SlopeCast</h1>
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class=" center links">
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -77,19 +71,6 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
 </html>

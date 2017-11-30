@@ -4,7 +4,7 @@
 
 <div id="resort">
 <link href="/css/style.css" rel="stylesheet">
-<h1>{{ $resort->name }}</h1>
+<h1 style="color:#30A9DE">{{ $resort->name }}</h1>
 <h5>{{ $resort->location }}</h3>
 
 <ul>

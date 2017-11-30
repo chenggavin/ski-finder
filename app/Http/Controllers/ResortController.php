@@ -108,7 +108,7 @@ class ResortController extends Controller
 
 
 
-        return $arosa;
+        return redirect('/home');
     }
 
     /**

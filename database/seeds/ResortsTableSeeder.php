@@ -103,7 +103,7 @@ class ResortsTableSeeder extends Seeder
             'pct_open' => '0.0',
             'upper_snow' =>11.8,
             'lower_snow' =>10,
-            'lifts_open' => '0/5',
+            'lifts_open' => '24/32',
             'img' => 'valthorens.jpg'
         ]);
 
