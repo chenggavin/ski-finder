@@ -5,6 +5,7 @@
 <div id="resort">
 <button class="back btn-secondary"><a href="/resort">Back</a></button>
 <link href="/css/style.css" rel="stylesheet">
+<link href="/css/mimic.css-master/mimic.min.css">
 <h1 style="color:#30A9DE">{{ $resort->name }}</h1>
 <h5>{{ $resort->location }}</h3>
 
@@ -69,6 +70,9 @@ frameborder="0"
 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJB89dUQVwaocRxKOafh_AzMk&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
 	
 </iframe>
+
+
+
 
 
 @endsection

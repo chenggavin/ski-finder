@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>SlopeCast</title>
 
         <!-- Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -22,25 +22,21 @@
                 margin: 0;
             }
             .title {
-                position: absolute;
-                top: 50%; 
-                margin-top:-120px;
-                left: 52%; 
-                margin-left:-200px;
                 font-size: 50px;
+                text-align: center;
+                margin-top:25%;
+                color:lightblue;
+                font-size:70px;
             }
 
             .center {
                 position: absolute;
                 top: 60%; 
                 margin-top:-100px;
-                left: 50%; 
+                left: 55%; 
                 margin-left:-200px
             }
 
-            .content {
-                text-align: center;
-            }
 
 
             .links > a {
@@ -58,8 +54,9 @@
             }
         </style>
     </head>
-    <body>
-            <h1 class="title">SlopeCast</h1>
+    <body><div class="animated bungee title">SlopeCast</div>
+
+            
             @if (Route::has('login'))
                 <div class=" center links">
                     @if (Auth::check())
