@@ -77,15 +77,18 @@ class ResortController extends Controller
      */
     public function update(Request $request)
     {
-        require '/vender/autoload.php';
+        // Guzzle Request for Arosa, Switzerland
+        // require '/vender/autoload.php';
         $client = new \GuzzleHttp\Client();
         $res = $client->request('GET', 'http://api.weatherunlocked.com/api/snowreport/13003?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647');
+
         echo $res->getStatusCode();
         // 200
         echo $res->getHeaderLine('content-type');
         // 'application/json; charset=utf8'
-        echo $res->getBody();
-        // '{"id": 1420053, "name": "guzzle", ...}'
+        $apiResult = json_decode($res->getBody(), true);
+
+        echo $pleaseWork['resortid'];
 
         return;
     }

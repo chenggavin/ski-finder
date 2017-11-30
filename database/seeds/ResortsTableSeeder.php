@@ -93,6 +93,20 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '0/5',
             'img' => 'perfectnorth.png'
         ]);
+        DB::table('resorts')->insert([
+            'name' => 'Arosa',
+            'slug' => 'arosa',
+            'location' => 'Arosa, Switzerland',
+            'open' => false,
+            'conditions' => 'Cloudy',
+            'new_snow_in' => '0.8',
+            'pct_open' => '0.0',
+            'upper_snow' =>11.8,
+            'lower_snow' =>10,
+            'lifts_open' => '0/5',
+            'img' => 'perfectnorth.png'
+        ]);
+
 
 
     }
