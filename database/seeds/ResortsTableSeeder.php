@@ -94,17 +94,17 @@ class ResortsTableSeeder extends Seeder
             'img' => 'perfectnorth.png'
         ]);
         DB::table('resorts')->insert([
-            'name' => 'Arosa',
-            'slug' => 'arosa',
-            'location' => 'Arosa, Switzerland',
-            'open' => false,
+            'name' => 'Val Thorens',
+            'slug' => 'val-thorens',
+            'location' => 'Val Thorens, France',
+            'open' => true,
             'conditions' => 'Cloudy',
             'new_snow_in' => '0.8',
             'pct_open' => '0.0',
             'upper_snow' =>11.8,
             'lower_snow' =>10,
             'lifts_open' => '0/5',
-            'img' => 'perfectnorth.png'
+            'img' => 'valthorens.jpg'
         ]);
 
 

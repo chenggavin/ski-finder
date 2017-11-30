@@ -77,11 +77,11 @@ class ResortController extends Controller
      */
     public function update(Request $request)
     {
-        // Guzzle Request for Arosa, Switzerland
+        // Guzzle Request for Val Thorens, France
         // require '/vender/autoload.php';
 
         $client = new \GuzzleHttp\Client();
-        $res = $client->request('GET', 'http://api.weatherunlocked.com/api/snowreport/13003?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647');
+        $res = $client->request('GET', 'http://api.weatherunlocked.com/api/snowreport/333020?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647');
 
         // echo $res->getStatusCode();
         // // 200
@@ -92,12 +92,19 @@ class ResortController extends Controller
         $resortId = $apiResult['resortid'];
         $resortConditions = $apiResult['conditions'];
         $resortNewSnow = $apiResult['newsnow_in'];
+        $resortLowerSnow = $apiResult['lowersnow_in'];
+        $resortUpperSnow = $apiResult['uppersnow_in'];
+        $resortPctOpen = $apiResult['pctopen'];
+        $resortLastSnow = $apiResult['lastsnow'];
 
-        $arosa = \App\Resort::where('id', 7)->update(
-            ['conditions' => $resortConditions, 'lifts_open' => '10/10']
-            
-
-        );
+        $arosa = \App\Resort::where('id', 7)->update([
+            'conditions' => $resortConditions, 
+            'new_snow_in' => $resortNewSnow,
+            'pct_open' => $resortPctOpen,
+            'upper_snow' => $resortUpperSnow,
+            'lower_snow' => $resortLowerSnow,
+            'last_snow' => $resortLastSnow
+        ]);
 
 
 
