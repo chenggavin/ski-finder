@@ -17,6 +17,7 @@ li {
 
 .attribute {
 	font-weight: bold;
+	margin-right: 1%;
 }
 
 .add {
@@ -54,3 +55,19 @@ img {
 h3 {
 	text-align: center;
 }
+
+
+.tableDiv {
+	margin-top:5%;
+}
+
+.resortTable {
+	width:40%;
+	margin:auto;
+}
+
+
+
+
+
+
