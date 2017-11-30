@@ -34,8 +34,8 @@ class ResortsTableSeeder extends Seeder
             'conditions' => 'Closed',
             'new_snow_in' => '0.0',
             'pct_open' => '0.0',
-            'upper_snow' =>null,
-            'lower_snow' =>null,
+            'upper_snow' =>0.1,
+            'lower_snow' =>0.0,
             'lifts_open' => '0',
             'img' => 'paoli.jpg',
             'website' => 'http://www.paolipeaks.com/'
@@ -59,7 +59,7 @@ class ResortsTableSeeder extends Seeder
         DB::table('resorts')->insert([
             'name' => 'Sugar Mountain',
             'slug' => 'sugar-mountain',
-            'location' => 'Sugar Mountain, North Carolina',
+            'location' => 'Sugar Mountain, NC',
             'open' => true,
             'conditions' => 'Sunny',
             'new_snow_in' => '0.0',

@@ -14,13 +14,16 @@
 	    </thead>
 	    <tbody>
 	      	<tr>
-		        <td><span class="attribute">Open Status:</span> 
+		        <td><span class="attribute">Open Status:</span></td>
 			@if ( $resort->open === true) 
-			</td>
+			
 		        <td><span style="color:green;">Open </span>
-			@else <span style="color:red;">Closed </span>
-			@endif</td>
+			@else 
+				<td><span style="color:red;">Closed </span></td>
+			@endif
 	      	</tr>
+
+
 	      	<tr>
 		        <td><span class="attribute">Condition:</span></td>
 		        <td>{{ $resort->conditions }}</td>
@@ -39,13 +42,16 @@
 	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">New Snow last 24hrs(in)</span></td>
-		        <td>{{ $resort->upper_snow }}</td>
+		        <td>{{ $resort->new_snow_in }}</td>
 	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">Upper Snow(in)</span></td>
+		        <td>{{ $resort->upper_snow }}</td>
+	      	</tr>
+	      	<tr>
+		        <td><span class="attribute">Lower Snow(in)</span></td>
 		        <td>{{ $resort->lower_snow }}</td>
 	      	</tr>
-
 	    </tbody>
 	</table>
 
