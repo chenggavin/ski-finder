@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 
     <div class="container">

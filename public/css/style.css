@@ -1,5 +1,7 @@
 
-
+* {
+	font-family: 'Archivo Narrow', sans-serif;
+}
 
 h1, h5 {
 	text-align: center;

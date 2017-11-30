@@ -8,7 +8,7 @@
         <title>SlopeCast</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
 
         <!-- Styles -->
@@ -27,6 +27,7 @@
                 margin-top:25%;
                 color:lightblue;
                 font-size:70px;
+                font-family: 'Bangers', cursive;
             }
 
             .center {
