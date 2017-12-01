@@ -61,23 +61,21 @@
 	      	</tr>
 	    </tbody>
 	</table>
-	
+
 	<iframe width="300" height="250" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
 	</iframe>
-
-
 
 
 	<!-- User Resort Reviews -->
 	<ul>
 		@foreach ($reviews as $review) 
-			<li>{{ $review->name}}
-			<li>"{{ $review->body }}"</li>
+			<li class="postLi">{{ $review->name}}
+			<li class="postLi">"{{ $review->body }}"</li>
 
 		@endforeach
 	</ul>
 
-	<form class="form-horizontal" method="post" action="/review/{{ $resort->slug}}">
+	<form class="" method="post" action="/review/{{ $resort->slug}}">
 	    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<div class="form-group">
 	      <div class="col-sm-3">
