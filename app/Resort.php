@@ -12,4 +12,7 @@ class Resort extends Model {
         return $this->belongsToMany('App\User', 'resort_user', 'resort_id', 'user_id');
 
     }
+    public function reviews() {
+        return $this->hasMany('App\Review');
+    }
 }

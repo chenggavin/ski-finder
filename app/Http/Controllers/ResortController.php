@@ -62,6 +62,14 @@ class ResortController extends Controller
     $tempK = $weather['main']['temp'];
     $tempF = round(9/5 * ($tempK - 273) + 32);
     $description = $weather['weather'][0]['description'];
+
+    // Display reviews from users
+    $reviews = \App\Review::all();
+    return $reviews;
+
+
+
+
     return view('resort', compact('resort', 'tempF', 'description'));
     }
 

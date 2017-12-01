@@ -15,7 +15,7 @@ class ReviewsTableSeeder extends Seeder
             'user_id' => '1',
             'resort_slug' => 'vail',
             'stars' => 5,
-            'body' => 'This is the best resort ever! Awesome slopes, awesome park!'
+            'body' => 'This is the best resort ever! Awesome slopes, awesome park!',
         ]);
     }
 }

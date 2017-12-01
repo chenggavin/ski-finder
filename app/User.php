@@ -32,4 +32,7 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Resort', 'resort_user','user_id','resort_id');
     }
+    public function reviews() {
+        return $this->hasMany('App\Review');
+    }
 }
