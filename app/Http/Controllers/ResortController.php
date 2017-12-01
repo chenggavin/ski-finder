@@ -147,6 +147,15 @@ class ResortController extends Controller
         
         return view('search', compact('resorts'));
     }
+
+    public function postReview(Request $request, $resort, $resort_slug, $post) {
+        return $resort_slug;
+        $review = new \App\Review;
+        $review->user_id = \Auth::user();
+        $review->resort_slug = $resort_slug;
+        $review->body = $request->input('body');
+        return redirect('/resort');
+    }
 }
 
 

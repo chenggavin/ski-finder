@@ -13,17 +13,15 @@
 
 <div class="tableDiv">
 	<table class="table resortTable">
-
 	    </thead>
 	    <tbody>
 	      	<tr>
 		        <td><span class="attribute">Open Status:</span></td>
-			@if ( $resort->open === true) 
-			
+				@if ( $resort->open === true) 
 		        <td><span style="color:green;">Open </span>
-			@else 
+				@else 
 				<td><span style="color:red;">Closed </span></td>
-			@endif
+				@endif
 	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">Temperature:</span></td>
@@ -60,11 +58,11 @@
 	      	<tr>
 		        <td>Website</a></td>
 		        <td><a href="{{ $resort->website }}">{{ $resort->website }}</td>
-
 	      	</tr>
 	    </tbody>
 	</table>
 
+	<!-- User Resort Reviews -->
 	<ul>
 		@foreach ($reviews as $review) 
 			<li>{{ $review->name}}
@@ -72,6 +70,20 @@
 
 		@endforeach
 	</ul>
+
+	<form class="form-horizontal" method="post" action="/resort/{resort_id}/resort_slug/post">
+	    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+		<div class="form-group">
+	      <div class="col-sm-3">
+	        <textarea class="form-control" rows="3" name="body" placeholder="Your review..."></textarea>
+	      </div>
+	    </div>
+	    <button type="submit" class="btn btn-primary">Post!</button>
+	</form>
+
+
+
+
 </div>
 
 <iframe width="300" height="250" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>

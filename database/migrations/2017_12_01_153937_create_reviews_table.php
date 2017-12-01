@@ -17,7 +17,7 @@ class CreateReviewsTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('resort_slug');
-            $table->integer('stars');
+            $table->integer('stars')->nullable();
             $table->text('body');
             $table->timestamps();
         });

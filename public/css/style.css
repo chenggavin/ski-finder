@@ -185,6 +185,11 @@ li a:hover {
 	background: #f6f6f6;
 }
 
+textarea {
+	width: 200px;
+}
+
+
 @media only screen and (max-device-width: 480px) {
 	.resortTable {
 		width: 70%;
