@@ -41,7 +41,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '0',
             'img' => 'paoli.jpg',
             'website' => 'http://www.paolipeaks.com/',
-            'map' => 'ChIJrWRDhyahbogRzpm8bG0R1Ew'
+            'map' => 'ChIJrWRDhyahbogRzpm8bG0R1Ew',
+            'zip' => 47454
 
         ]);
         DB::table('resorts')->insert([
@@ -57,7 +58,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '3/14',
             'img' => 'snowshoe.png',
             'website' => 'https://www.snowshoemtn.com/',
-            'map' => 'ChIJmeNbQsdwS4gRvQIya65j8o8'
+            'map' => 'ChIJmeNbQsdwS4gRvQIya65j8o8',
+            'zip' => 24934
 
         ]);
         DB::table('resorts')->insert([
@@ -89,7 +91,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '9/36',
             'img' => 'bigsky.jpg',
             'website' => 'https://bigskyresort.com/',
-            'map' => 'ChIJNSw3_WUOUFMRyiuLqjtx-JU'
+            'map' => 'ChIJNSw3_WUOUFMRyiuLqjtx-JU',
+            'zip' => 59716
         ]);
         DB::table('resorts')->insert([
             'name' => 'Perfect North',
@@ -104,7 +107,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '0/5',
             'img' => 'perfectnorth.png',
             'website' => 'https://perfectnorth.com/',
-            'map' => 'ChIJ3-FGn0fUQYgR44dm92UDQHo'
+            'map' => 'ChIJ3-FGn0fUQYgR44dm92UDQHo',
+            'zip' => 47025
         ]);
         DB::table('resorts')->insert([
             'name' => 'Val Thorens',
@@ -119,7 +123,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '24/32',
             'img' => 'valthorens.jpg',
             'website' => 'http://www.valthorens.com/en/home-page.1.html',
-            'map' => 'ChIJcXAmAmCGiUcRM_PuwW28x44'
+            'map' => 'ChIJcXAmAmCGiUcRM_PuwW28x44',
+            'zip' => 38000
         ]);
 
         DB::table('resorts')->insert([
@@ -135,7 +140,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '4/31',
             'img' => 'vail.jpg',
             'website' => 'https://www.vail.com/',
-            'map' => 'ChIJB89dUQVwaocRxKOafh_AzMk'
+            'map' => 'ChIJB89dUQVwaocRxKOafh_AzMk',
+            'zip' => 81657
         ]);
 
 
