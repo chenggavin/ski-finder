@@ -12,8 +12,7 @@ ul {
 }
 
 li {
-	font-size: 18px;
-	margin-bottom: 2%;
+	font-size: 12px;
 }
 
 
@@ -162,6 +161,7 @@ h2 {
 .welcomeLi {
 	font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
 	border-bottom: 1px solid #ccc;
+	margin-bottom: 2%;
 }
  
 .welcomeLi:last-child {

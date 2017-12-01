@@ -65,7 +65,11 @@
 	    </tbody>
 	</table>
 
-
+	<ul>
+		@foreach ($reviews as $review) 
+			<li>"{{ $review->body }}"</li>
+		@endforeach
+	</ul>
 </div>
 
 <iframe width="300" height="250" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>

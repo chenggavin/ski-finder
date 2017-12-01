@@ -64,13 +64,11 @@ class ResortController extends Controller
     $description = $weather['weather'][0]['description'];
 
     // Display reviews from users
-    $reviews = \App\Review::all();
-    return $reviews;
+    $reviews = \App\Review::where('resort_slug', $slug)->get();
+    
 
 
-
-
-    return view('resort', compact('resort', 'tempF', 'description'));
+    return view('resort', compact('resort', 'tempF', 'description', 'reviews'));
     }
 
     /**
@@ -94,17 +92,9 @@ class ResortController extends Controller
     public function update(Request $request)
     {
         // Guzzle Request for Val Thorens, France
-        // require '/vender/autoload.php';
-
         $client = new \GuzzleHttp\Client();
         $res = $client->request('GET', 'http://api.weatherunlocked.com/api/snowreport/333020?app_id=50e5bb49&app_key=78cb7c5c0856518f78e1647e12788647');
-
-        // echo $res->getStatusCode();
-        // // 200
-        // echo $res->getHeaderLine('content-type');
-        // // 'application/json; charset=utf8'
         $apiResult = json_decode($res->getBody(), true);
-
         $resortId = $apiResult['resortid'];
         $resortConditions = $apiResult['conditions'];
         $resortNewSnow = $apiResult['newsnow_in'];
@@ -112,7 +102,6 @@ class ResortController extends Controller
         $resortUpperSnow = $apiResult['uppersnow_in'];
         $resortPctOpen = $apiResult['pctopen'];
         $resortLastSnow = $apiResult['lastsnow'];
-
         $valThorens = \App\Resort::where('id', 7)->update([
             'conditions' => $resortConditions, 
             'new_snow_in' => $resortNewSnow,
@@ -121,8 +110,6 @@ class ResortController extends Controller
             'lower_snow' => $resortLowerSnow,
             'last_snow' => $resortLastSnow
         ]);
-
-
 
         return redirect('/home');
     }
@@ -136,9 +123,8 @@ class ResortController extends Controller
     public function destroy($resort_id)
     {
         $user = \Auth::user();
-        
         $user->resorts()->detach($resort_id);
-
+        
         return redirect('/resort');
     }
 

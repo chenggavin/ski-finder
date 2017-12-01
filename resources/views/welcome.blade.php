@@ -29,7 +29,7 @@
             <h3> Supported Resorts</h3>
             <ul class="welcomeUl">
                 @foreach ($resorts as $resort)
-                <li class="welcomeLi"><a href="#">{{ $resort->name }}</a></li>
+                <li class="welcomeLi"><a href="">{{ $resort->name }}</a></li>
                 @endforeach
             </ul>
         </div>
