@@ -11,53 +11,9 @@
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700" rel="stylesheet">
         <link href="/css/style.css" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-            .title {
-                font-size: 50px;
-                text-align: center;
-                margin-top:25%;
-                color:lightblue;
-                font-size:70px;
-                font-family: 'Bangers', cursive;
-            }
-
-            .center {
-                position: absolute;
-                top: 60%; 
-                margin-top:-100px;
-                left: 55%; 
-                margin-left:-200px
-            }
-
-
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 20px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
-    <body><div class="animated bungee title">SlopeCast</div>
-
-            
+    <body>
+        <div class="animated bungee welcomeTitle">SlopeCast</div> 
             @if (Route::has('login'))
                 <div class=" center links">
                     @if (Auth::check())
@@ -68,7 +24,14 @@
                     @endif
                 </div>
             @endif
-
+        </div>
+        <div class="welcomeDiv">
+            <h3> Supported Resorts</h3>
+            <ul class="welcomeUl">
+                @foreach ($resorts as $resort)
+                <li class="welcomeLi"><a href="#">{{ $resort->name }}</a></li>
+                @endforeach
+            </ul>
         </div>
     </body>
 </html>

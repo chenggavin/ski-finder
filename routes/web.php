@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$resorts = \App\Resort::orderBy('name', 'asc')->get();
+
+    return view('welcome', compact('resorts'));
 });
 
 Auth::routes();

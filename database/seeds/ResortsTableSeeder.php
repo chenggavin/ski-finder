@@ -24,7 +24,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '8',
             'img' => 'copper.png',
             'website' => 'http://www.coppercolorado.com/',
-            'map' => 'ChIJje2Mxv5faocRGxb87e3-W8o'
+            'map' => 'ChIJje2Mxv5faocRGxb87e3-W8o',
+            'zip' => '80443'
 
         ]);
         DB::table('resorts')->insert([

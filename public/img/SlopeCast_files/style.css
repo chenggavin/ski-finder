@@ -105,20 +105,21 @@ html, body {
     height: 100vh;
     margin: 0;
 }
-.welcomeTitle {
+.title {
     font-size: 50px;
     text-align: center;
     margin-top:25%;
     color:lightblue;
     font-size:70px;
     font-family: 'Archivo Narrow', sans-serif;
-
 }
 
 .center {
+    position: absolute;
     top: 60%; 
-    margin-top:10%;
-    text-align: center;
+    margin-top:-100px;
+    left: 55%; 
+    margin-left:-200px
 }
 
 

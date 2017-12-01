@@ -29,6 +29,7 @@ class CreateResortsTable extends Migration
             $table->string('img')->nullable();
             $table->text('website')->nullable();
             $table->text('map');
+            $table->integer('zip');
             $table->timestamps();
         });
     }

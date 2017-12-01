@@ -54,6 +54,15 @@ class ResortController extends Controller
     {
     $resort = \App\Resort::where('slug', $slug)->firstOrFail();
     // return $item;
+
+    $client = new \GuzzleHttp\Client();
+    $res = $client->request('GET', 'https://api.openweathermap.org/data/2.5/weather?zip=<zipcode>&us&appid=ef6a94dab254dc386b931af4d5ca58c7');
+
+
+
+
+
+
     return view('resort', compact('resort'));
     }
 
@@ -96,8 +105,8 @@ class ResortController extends Controller
         $resortUpperSnow = $apiResult['uppersnow_in'];
         $resortPctOpen = $apiResult['pctopen'];
         $resortLastSnow = $apiResult['lastsnow'];
-        
-        $arosa = \App\Resort::where('id', 7)->update([
+
+        $valThorens = \App\Resort::where('id', 7)->update([
             'conditions' => $resortConditions, 
             'new_snow_in' => $resortNewSnow,
             'pct_open' => $resortPctOpen,
