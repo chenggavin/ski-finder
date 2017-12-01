@@ -57,8 +57,14 @@
 		        <td><span class="attribute">Lower Snow(in)</span></td>
 		        <td>{{ $resort->lower_snow }}</td>
 	      	</tr>
+	      	<tr>
+		        <td>Website</a></td>
+		        <td><a href="{{ $resort->website }}">{{ $resort->website }}</td>
+
+	      	</tr>
 	    </tbody>
 	</table>
+
 
 </div>
 

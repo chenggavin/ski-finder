@@ -25,7 +25,7 @@ class ResortsTableSeeder extends Seeder
             'img' => 'copper.png',
             'website' => 'http://www.coppercolorado.com/',
             'map' => 'ChIJje2Mxv5faocRGxb87e3-W8o',
-            'zip' => '80443'
+            'zip' => 80443
 
         ]);
         DB::table('resorts')->insert([
@@ -75,7 +75,8 @@ class ResortsTableSeeder extends Seeder
             'lifts_open' => '2/8',
             'img' => 'sugar.png',
             'website' => 'http://www.skisugar.com/',
-            'map' => 'ChIJ8bC5VyztUIgRjOY8g-tB9mI'
+            'map' => 'ChIJ8bC5VyztUIgRjOY8g-tB9mI',
+            'zip' => 28604
 
         ]);
         DB::table('resorts')->insert([
@@ -124,7 +125,7 @@ class ResortsTableSeeder extends Seeder
             'img' => 'valthorens.jpg',
             'website' => 'http://www.valthorens.com/en/home-page.1.html',
             'map' => 'ChIJcXAmAmCGiUcRM_PuwW28x44',
-            'zip' => 38000
+            'zip' => 61102
         ]);
 
         DB::table('resorts')->insert([
