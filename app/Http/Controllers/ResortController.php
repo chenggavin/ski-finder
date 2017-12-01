@@ -52,18 +52,17 @@ class ResortController extends Controller
      */
     public function show($slug)
     {
+    // Display specified resort
     $resort = \App\Resort::where('slug', $slug)->firstOrFail();
-    // return $item;
-
+    
+    // Api call for Open Weather API
     $client = new \GuzzleHttp\Client();
-    $res = $client->request('GET', 'https://api.openweathermap.org/data/2.5/weather?zip=<zipcode>&us&appid=ef6a94dab254dc386b931af4d5ca58c7');
-
-
-
-
-
-
-    return view('resort', compact('resort'));
+    $res = $client->request('GET', 'https://api.openweathermap.org/data/2.5/weather?zip='.$resort->zip.'&us&appid=ef6a94dab254dc386b931af4d5ca58c7');
+    $weather = json_decode($res->getBody(), true);
+    $tempK = $weather['main']['temp'];
+    $tempF = round(9/5 * ($tempK - 273) + 32);
+    $description = $weather['weather'][0]['description'];
+    return view('resort', compact('resort', 'tempF', 'description'));
     }
 
     /**

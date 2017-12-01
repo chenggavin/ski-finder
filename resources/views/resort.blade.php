@@ -25,11 +25,13 @@
 				<td><span style="color:red;">Closed </span></td>
 			@endif
 	      	</tr>
-
-
+	      	<tr>
+		        <td><span class="attribute">Temperature:</span></td>
+		        <td>{{ $tempF }}&deg;F</td>
+	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">Condition:</span></td>
-		        <td>{{ $resort->conditions }}</td>
+		        <td>{{ $description }}</td>
 	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">Percentage Open:</span></td>
