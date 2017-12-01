@@ -61,6 +61,12 @@
 	      	</tr>
 	    </tbody>
 	</table>
+	
+	<iframe width="300" height="250" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
+	</iframe>
+
+
+
 
 	<!-- User Resort Reviews -->
 	<ul>
@@ -71,7 +77,7 @@
 		@endforeach
 	</ul>
 
-	<form class="form-horizontal" method="post" action="/resort/{resort_id}/resort_slug/post">
+	<form class="form-horizontal" method="post" action="/review/{{ $resort->slug}}">
 	    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<div class="form-group">
 	      <div class="col-sm-3">
@@ -82,12 +88,9 @@
 	</form>
 
 
-
-
 </div>
 
-<iframe width="300" height="250" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
-</iframe>
+
 
 
 

@@ -27,8 +27,7 @@ Route::post('/resort/{resort_id}', 'ResortController@store');
 Route::delete('/resort/{resort_id}/delete', 'ResortController@destroy');
 
 Route::get('/apiupdate', 'ResortController@update');
-Route::post('/resort/{resort_id}/{resort_slug}/{post}', 'ResortController@postReview');
 
-
+Route::post('/review/{resort_slug}', 'ReviewController@store');
 Route::resource('/resort', 'ResortController');
 
