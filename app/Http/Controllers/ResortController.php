@@ -64,8 +64,13 @@ class ResortController extends Controller
     $description = $weather['weather'][0]['description'];
 
     // Display reviews from users
-    $reviews = \App\Review::where('resort_slug', $slug)->get();
     
+    // $reviews = \App\Review::where('resort_slug', $slug)->get();
+
+    $reviews = \App\Review::
+        select('reviews.user_id', 'reviews.resort_slug', 'reviews.stars', 'reviews.body', 'users.name')->
+        join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
+        get();
 
 
     return view('resort', compact('resort', 'tempF', 'description', 'reviews'));
@@ -124,7 +129,7 @@ class ResortController extends Controller
     {
         $user = \Auth::user();
         $user->resorts()->detach($resort_id);
-        
+
         return redirect('/resort');
     }
 

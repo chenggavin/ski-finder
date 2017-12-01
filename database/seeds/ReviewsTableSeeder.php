@@ -17,5 +17,11 @@ class ReviewsTableSeeder extends Seeder
             'stars' => 5,
             'body' => 'This is the best resort ever! Awesome slopes, awesome park!',
         ]);
+        DB::table('reviews')->insert([
+            'user_id' => '2',
+            'resort_slug' => 'vail',
+            'stars' => 3,
+            'body' => 'Meh.. could be better',
+        ]);
     }
 }

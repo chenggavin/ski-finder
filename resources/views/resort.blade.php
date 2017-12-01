@@ -67,7 +67,9 @@
 
 	<ul>
 		@foreach ($reviews as $review) 
+			<li>{{ $review->name}}
 			<li>"{{ $review->body }}"</li>
+
 		@endforeach
 	</ul>
 </div>

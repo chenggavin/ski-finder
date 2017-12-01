@@ -8,7 +8,7 @@ class Review extends Model
 {
 	protected $table = 'reviews';
 
-    public function reviews() {
+    public function users() {
         return $this->BelongsTo('App\User');
     }
 }
