@@ -74,8 +74,15 @@
 		<div class="reviewDiv col-sm-6">
 			<h4 class="reviewTitle">User Reviews</h4>
 			<ul>
-				@foreach ($reviews as $review) 
-					<li class="postLi" style="margin-top:5%">{{ $review->name}} <i class="fa fa-star" aria-hidden="true"></i></li>
+				@foreach ($reviews as $review)
+					<!-- hardcoded population of stars, placing in mustashe vairable did not work  -->
+					
+					<li class="postLi" style="margin-top:5%">{{ $review->name}}
+
+						@for ($i = 0; $i < ($review->stars); $i++)
+						<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
+						@endfor
+						</li>
 					<li class="postLi" style="margin-left:10px">"{{ $review->body }}"</li>
 				@endforeach
 			</ul>

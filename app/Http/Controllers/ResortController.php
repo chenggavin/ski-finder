@@ -72,6 +72,7 @@ class ResortController extends Controller
         join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
         get();
 
+    
 
     return view('resort', compact('resort', 'tempF', 'description', 'reviews'));
     }
