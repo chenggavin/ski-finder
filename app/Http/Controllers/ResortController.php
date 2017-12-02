@@ -65,7 +65,7 @@ class ResortController extends Controller
 
     // Display reviews from users
     
-    // $reviews = \App\Review::where('resort_slug', $slug)->get();
+
 
     $reviews = \App\Review::
         select('reviews.user_id', 'reviews.resort_slug', 'reviews.stars', 'reviews.body', 'users.name')->
