@@ -54,6 +54,8 @@ class ResortController extends Controller
     {
     // Display specified resort
     $resort = \App\Resort::where('slug', $slug)->firstOrFail();
+
+
     
     // Api call for Open Weather API
     $client = new \GuzzleHttp\Client();
@@ -68,10 +70,18 @@ class ResortController extends Controller
         select('reviews.user_id', 'reviews.resort_slug', 'reviews.stars', 'reviews.body', 'users.name')->
         join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
         get();
+    $reviewStars = \App\Review::
+        select( 'reviews.stars')->
+        join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
+        get();
 
-    
-
-    return view('resort', compact('resort', 'tempF', 'description', 'reviews'));
+    // Average user star rating
+    $starArray = [];
+    foreach ($reviewStars as $star) {
+        array_push($starArray, $star->stars);
+    }
+    $avgStar = array_sum($starArray)/count($starArray);
+    return view('resort', compact('resort', 'tempF', 'description', 'reviews', 'avgStar'));
     }
 
     /**
