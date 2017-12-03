@@ -93,6 +93,21 @@
 				<div class="form-group">
 			      <div class="col-sm-8">
 			        <textarea class="form-control" required rows="3" cols="200" width="450px" name="body" placeholder="What did you think?"></textarea>
+					<div class="form-group">
+					    <label for="rating" class="">Rating</label>
+					    <div class="col-sm-10">
+				        	<select name="rating" class="form-control" required>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+				        	</select>
+				      	</div>
+				    </div>
+
+
+
 			      </div>
 			    </div>
 			    <button type="submit" class="btn btn-primary">Post!</button>

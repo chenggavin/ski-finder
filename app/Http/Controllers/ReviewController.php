@@ -38,8 +38,8 @@ class ReviewController extends Controller
         $review = new \App\Review;
         $review->user_id = \Auth::user()->id;
         $review->resort_slug = $id;
-        $review->stars = 5;
         $review->body = $request->input('body');
+        $review->stars = $request->input('rating');
         $review->save();
         return redirect("/resort/$id");
     }
