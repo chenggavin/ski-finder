@@ -75,7 +75,7 @@
 			<h4 class="reviewTitle">User Reviews</h4>
 			<ul>
 				@foreach ($reviews as $review)
-					<!-- hardcoded population of stars, placing in mustashe vairable did not work  -->
+					
 					
 					<li class="postLi" style="margin-top:5%">{{ $review->name}}
 
@@ -92,7 +92,7 @@
 			    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 				<div class="form-group">
 			      <div class="col-sm-8">
-			        <textarea class="form-control" rows="3" cols="200" width="450px" name="body" placeholder="What did you think?"></textarea>
+			        <textarea class="form-control" required rows="3" cols="200" width="450px" name="body" placeholder="What did you think?"></textarea>
 			      </div>
 			    </div>
 			    <button type="submit" class="btn btn-primary">Post!</button>
