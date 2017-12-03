@@ -60,6 +60,14 @@
 		        <td>Website</a></td>
 		        <td><a href="{{ $resort->website }}">{{ $resort->website }}</td>
 	      	</tr>
+	      	<tr>
+		        <td>SlopeCast User Rating (out of 5)</a></td>
+		        <td>
+		        	@for ($i = 0; $i < $avgStar; $i++)
+					<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
+					@endfor
+				</td>
+	      	</tr>
 	    </tbody>
 	</table>
 </div>
@@ -75,10 +83,7 @@
 			<h4 class="reviewTitle">User Reviews</h4>
 			<ul>
 				@foreach ($reviews as $review)
-					
-					
 					<li class="postLi" style="margin-top:5%">{{ $review->name}}
-
 						@for ($i = 0; $i < ($review->stars); $i++)
 						<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
 						@endfor
@@ -93,9 +98,8 @@
 				<div class="form-group">
 			      <div class="col-sm-8">
 			        <textarea class="form-control" required rows="3" cols="200" width="450px" name="body" placeholder="What did you think?"></textarea>
-					<div class="form-group">
+
 					    <label for="rating" class="">Rating</label>
-					    <div class="col-sm-10">
 				        	<select name="rating" class="form-control" required>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -103,11 +107,6 @@
 								<option value="4">4</option>
 								<option value="5">5</option>
 				        	</select>
-				      	</div>
-				    </div>
-
-
-
 			      </div>
 			    </div>
 			    <button type="submit" class="btn btn-primary">Post!</button>

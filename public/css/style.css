@@ -203,9 +203,11 @@ iframe {
 	text-decoration: underline;
 }
 textarea {
-		margin-left:3%;
 		resize: none;
 	}
+.ratingLabel {
+	float:left;
+}
 
 @media only screen and (max-device-width: 480px) {
 	.resortTable {
