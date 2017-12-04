@@ -78,46 +78,45 @@
 <br>
 <hr width="60%">
 <div class="row iframeReview">
-	<div class="col-lg-6">
-		<iframe width="500" height="250" frame border="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
+	<div class="col-lg-6" align="center">
+		<iframe frame src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
 		</iframe>
 	</div>
 	<!-- User Resort Reviews -->
-	<div class="reviewDiv col-lg-6 col-md-12">
+	<div class="reviewDiv col-lg-4 col-md-12">
 		<h4 class="reviewTitle">User Reviews</h4>
 		<ul>
 			@foreach ($reviews as $review)
-				<li class="postLi" style="margin-top:5%">{{ $review->name}}
+				<li class="postName">{{ $review->name}}
 					@for ($i = 0; $i < ($review->stars); $i++)
-					<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
+					<i class="fa fa-star" aria-hidden="true"></i>
 					@endfor
 					</li>
-				<li class="postLi" style="margin-left:10px">"{{ $review->body }}"</li>
+				<li class="postBody">"{{ $review->body }}"</li>
 			@endforeach
 		</ul>
 		<hr>
 
 		<form method="post" action="/review/{{ $resort->slug}}">
 		    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-			
-	      	<div class="col-8">
+	      	<div class="col-sm-10 col-md-10 col-lg-10">
 		        <textarea class="form-control" rows="4" required name="body" placeholder="What did you think?"></textarea>
 		    </div>
-				<div class="col-sm-4">
-					<div class="row">
-		        	<select name="rating" class="form-control" required style="margin-top:1%">
-		        		<option disabled selected value style="display:none">Select Rating</option>
+			<div class="col-sm-2 col-md-2 col-lg-2" align="center">
+				<div class="row">
+		        	<select name="rating" class="form-control rating" required>
+		        		<option disabled selected value style="display:none">Select</option>
 						<option value="1">&#9733;</option>
 						<option value="2">&#9733;&#9733;</option>
 						<option value="3">&#9733;&#9733;&#9733;</option>
 						<option value="4">&#9733;&#9733;&#9733;&#9733;</option>
 						<option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
 		        	</select>
-		        </div>
-	        	<div class="row">
-	        		<button type="submit" class=" form-control btn btn-primary postButton">POST</button>
+		        <div class="row">
+	        		<button type="submit" class="form-control btn btn-primary postButton">POST</button>
 	        	</div>
-		        </div>
+	        	</div>
+		    </div>
 		</form>
 	</div>
 </div>
