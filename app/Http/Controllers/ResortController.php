@@ -80,7 +80,9 @@ class ResortController extends Controller
     foreach ($reviewStars as $star) {
         array_push($starArray, $star->stars);
     }
-    $avgStar = array_sum($starArray)/count($starArray);
+    if (!empty($starArray)) {
+        $avgStar = array_sum($starArray)/count($starArray);
+    }
     return view('resort', compact('resort', 'tempF', 'description', 'reviews', 'avgStar'));
     }
 

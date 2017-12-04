@@ -63,9 +63,13 @@
 	      	<tr>
 		        <td>SlopeCast User Rating (out of 5)</a></td>
 		        <td>
-		        	@for ($i = 0; $i < $avgStar; $i++)
-					<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
-					@endfor
+		        	@if (!empty($avgStar))
+			        	@for ($i = 0; $i < $avgStar; $i++)
+						<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
+						@endfor
+					@else 
+						No Current Reviews
+					@endif
 				</td>
 	      	</tr>
 	    </tbody>
