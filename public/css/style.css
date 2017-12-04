@@ -2,10 +2,15 @@
 * {
 	font-family: 'News Cycle', sans-serif;
 
+
 }
 
 h1, h5 {
 	text-align: center;
+}
+
+h3 {
+	font-family: 'Russo One', sans-serif;
 }
 
 ul {
@@ -18,7 +23,7 @@ ul {
 }
 
 .title {
-	font-family: 'Archivo Narrow', sans-serif;
+	font-family: 'Russo One', sans-serif;
 	color:#30A9DE !important;
 	font-size: 30px;
 }
@@ -84,6 +89,12 @@ h3 {
 	
 }
 
+.searchTable {
+	margin-top: 5%;
+	margin-left: 33%;
+	width: 30%;
+}
+
 .back {
 	margin-left: 9%;
 }
@@ -105,7 +116,7 @@ html, body {
     margin-top:25%;
     color:lightblue;
     font-size:70px;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Russo One', sans-serif;
 
 }
 

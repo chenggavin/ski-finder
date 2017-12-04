@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <title>SlopeCast</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>SlopeCast</title>
+        <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700" rel="stylesheet">

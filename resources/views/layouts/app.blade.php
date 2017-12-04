@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/aa5963477d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 
     <!-- CSRF Token -->
@@ -22,7 +23,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar">
             <div class="container">
                 <div class="navbar-header">
                     <!-- Collapsed Hamburger -->
