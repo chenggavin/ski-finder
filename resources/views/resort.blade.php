@@ -4,13 +4,11 @@
 
 
 <div id="resort">
-<button class="back btn-secondary"><a href="/resort">Back</a></button>
+<p class="siteNav"><a href="{{ url('resort') }}">Home</a> / {{ $resort->name }}</p>
 <link href="/css/style.css" rel="stylesheet">
 <link href="/css/mimic.css-master/mimic.min.css">
 <h1 style="color:#30A9DE">{{ $resort->name }}</h1>
 <h5>{{ $resort->location }}</h3>
-
-
 
 <div class="tableDiv">
 	<table class="table resortTable">
