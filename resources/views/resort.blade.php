@@ -9,7 +9,6 @@
 <link href="/css/mimic.css-master/mimic.min.css">
 <h1 style="color:#30A9DE">{{ $resort->name }}</h1>
 <h5>{{ $resort->location }}</h3>
-
 <div class="tableDiv">
 	<table class="table resortTable">
 	    </thead>
@@ -94,7 +93,6 @@
 			@endforeach
 		</ul>
 		<hr>
-
 		<form method="post" action="/review/{{ $resort->slug}}">
 		    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 	      	<div class="col-sm-10 col-md-10 col-lg-10">
@@ -118,8 +116,6 @@
 		</form>
 	</div>
 </div>
-
-
-
-
 @endsection
+
+
