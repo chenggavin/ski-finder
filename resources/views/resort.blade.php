@@ -65,7 +65,7 @@
 		        <td>
 		        	@if (!empty($avgStar))
 			        	@for ($i = 0; $i < $avgStar; $i++)
-						<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
+						<i class="fa fa-star" aria-hidden="true"></i>
 						@endfor
 					@else 
 						No Current Reviews
@@ -75,48 +75,52 @@
 	    </tbody>
 	</table>
 </div>
-	<br>
-	<hr width="60%">
-	<div class="row iframeReview">
-		<div class="col-sm-6">
-			<iframe width="600" height="250" frame border="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
-			</iframe>
-		</div>
-		<!-- User Resort Reviews -->
-		<div class="reviewDiv col-sm-6">
-			<h4 class="reviewTitle">User Reviews</h4>
-			<ul>
-				@foreach ($reviews as $review)
-					<li class="postLi" style="margin-top:5%">{{ $review->name}}
-						@for ($i = 0; $i < ($review->stars); $i++)
-						<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
-						@endfor
-						</li>
-					<li class="postLi" style="margin-left:10px">"{{ $review->body }}"</li>
-				@endforeach
-			</ul>
-			<hr>
-
-			<form class="" method="post" action="/review/{{ $resort->slug}}">
-			    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-				<div class="form-group">
-			      <div class="col-sm-8">
-			        <textarea class="form-control" required rows="3" cols="200" width="450px" name="body" placeholder="What did you think?"></textarea>
-
-					    <label for="rating" class="">Rating</label>
-				        	<select name="rating" class="form-control" required>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-				        	</select>
-			      </div>
-			    </div>
-			    <button type="submit" class="btn btn-primary">Post!</button>
-			</form>
-		</div>
+<br>
+<hr width="60%">
+<div class="row iframeReview">
+	<div class="col-lg-6">
+		<iframe width="500" height="250" frame border="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
+		</iframe>
 	</div>
+	<!-- User Resort Reviews -->
+	<div class="reviewDiv col-lg-6 col-md-12">
+		<h4 class="reviewTitle">User Reviews</h4>
+		<ul>
+			@foreach ($reviews as $review)
+				<li class="postLi" style="margin-top:5%">{{ $review->name}}
+					@for ($i = 0; $i < ($review->stars); $i++)
+					<?php echo '<i class="fa fa-star" aria-hidden="true"></i>' ?>
+					@endfor
+					</li>
+				<li class="postLi" style="margin-left:10px">"{{ $review->body }}"</li>
+			@endforeach
+		</ul>
+		<hr>
+
+		<form method="post" action="/review/{{ $resort->slug}}">
+		    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+			
+	      	<div class="col-8">
+		        <textarea class="form-control" rows="4" required name="body" placeholder="What did you think?"></textarea>
+		    </div>
+				<div class="col-sm-4">
+					<div class="row">
+		        	<select name="rating" class="form-control" required style="margin-top:1%">
+		        		<option disabled selected value style="display:none">Select Rating</option>
+						<option value="1">&#9733;</option>
+						<option value="2">&#9733;&#9733;</option>
+						<option value="3">&#9733;&#9733;&#9733;</option>
+						<option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+						<option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+		        	</select>
+		        </div>
+	        	<div class="row">
+	        		<button type="submit" class=" form-control btn btn-primary postButton">POST</button>
+	        	</div>
+		        </div>
+		</form>
+	</div>
+</div>
 
 
 
