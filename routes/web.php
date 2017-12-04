@@ -18,16 +18,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::resource('/home', 'ResortController');
-
-
 Route::get('/resort/search', 'ResortController@search');
 Route::post('/resort/{resort_id}', 'ResortController@store');
 Route::delete('/resort/{resort_id}/delete', 'ResortController@destroy');
-
 Route::get('/apiupdate', 'ResortController@update');
-
 Route::post('/review/{resort_slug}', 'ReviewController@store');
 Route::resource('/resort', 'ResortController');
 

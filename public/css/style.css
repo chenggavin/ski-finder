@@ -12,6 +12,11 @@ ul {
 	list-style-type: none;
 }
 
+.title {
+	font-family: 'Archivo Narrow', sans-serif;
+	color:#30A9DE !important;
+	font-size: 30px;
+}
 .attribute {
 	font-weight: bold;
 	margin-right: 1%;
