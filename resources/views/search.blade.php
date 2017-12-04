@@ -12,7 +12,7 @@
 			<form method="post" action="/resort/{{ $resort->id }}" class="form-horizontal">
 				{{ csrf_field() }}
 			    {{ method_field('POST') }}
-		      	<tr>
+		      	<tr class="welcomeLi">
 			        <td>{{ $resort->name }}</td>
 			        <td><button type="submit" class="addsearch" name="add" value="add"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
 		      	</tr>
