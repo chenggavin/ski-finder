@@ -190,6 +190,7 @@ h2 {
   	width: 200px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:5%;
 	text-align: center;
 }
  
@@ -285,7 +286,7 @@ textarea {
 
 @media only screen and (max-device-width: 480px) {
 	.resortTable {
-		width: 70%;
+		width: 90%;
 		margin: auto;
 	}
 	iframe {
@@ -313,6 +314,15 @@ textarea {
 		margin-left:-280px;
 		text-align: center;
 	}
+	.welcomeLi {
+		font-size:16px;
+	}
+	.searchTable {
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
 
 }
 
