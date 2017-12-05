@@ -58,7 +58,7 @@
 		        <td><a href="{{ $resort->website }}">{{ $resort->website }}</td>
 	      	</tr>
 	      	<tr>
-		        <td>SlopeCast User Rating (out of 5)</a></td>
+		        <td>SlopeCast User Rating ( out of 5 )</a></td>
 		        <td>
 		        	@if (!empty($avgStar))
 			        	@for ($i = 0; $i < $avgStar; $i++)
