@@ -89,6 +89,7 @@
 					<i class="fa fa-star star" aria-hidden="true"></i>
 					@endfor
 					</li>
+				<li style="font-size: 10px;"> {{ $review->created_at->toDayDateTimeString() }}</li>
 				<li class="postBody">"{{ $review->body }}"</li>
 			@endforeach
 		</ul>

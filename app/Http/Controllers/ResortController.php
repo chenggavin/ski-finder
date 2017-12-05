@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ResortController extends Controller
 {
@@ -71,9 +72,11 @@ class ResortController extends Controller
 
     // Display reviews from users
     $reviews = \App\Review::
-        select('reviews.user_id', 'reviews.resort_slug', 'reviews.stars', 'reviews.body', 'users.name')->
+        select('reviews.user_id', 'reviews.resort_slug', 'reviews.stars', 'reviews.body', 'reviews.created_at', 'users.name')->
         join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
         get();
+
+    // return $reviews->first();
     $reviewStars = \App\Review::
         select( 'reviews.stars')->
         join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
