@@ -62,11 +62,7 @@ img {
 	display: inline-block;
 }
 
-.addsearch {
-	margin-left: 2%;
-	margin-bottom: 2%;
-	display: inline-block;
-}
+
 
 h3 {
 	text-align: center;
@@ -185,7 +181,15 @@ h2 {
 	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
 	transition: font-size 0.3s ease, background-color 0.3s ease;
 }
-
+.welcomeLi td{
+	color: #000;
+	display: block;
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
+}
 
  
 .welcomeLi a:hover {
@@ -193,8 +197,15 @@ h2 {
 	background: #f6f6f6;
 }
 .welcomeLi:hover {
-	font-size: 35px;
+	font-size: 28px;
 	background: #f6f6f6;
+}
+.addsearch {
+	float: right;
+	display: inline-block;
+}
+.addsearch:hover {
+	transform: scale(1.2) !important;
 }
 
 .iframeReview {

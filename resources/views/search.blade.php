@@ -13,8 +13,8 @@
 				{{ csrf_field() }}
 			    {{ method_field('POST') }}
 		      	<tr class="welcomeLi">
-			        <td>{{ $resort->name }}</td>
-			        <td><button type="submit" class="addsearch" name="add" value="add"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+			        <td>{{ $resort->name }}<button type="submit" class="addsearch" name="add" value="add"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+			        
 		      	</tr>
 	      	</form>
 	      	@endforeach
