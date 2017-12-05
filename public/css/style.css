@@ -16,7 +16,7 @@ h1, h5 {
 
 h3 {
 	font-family: 'Russo One', sans-serif;
-	color:black;
+	color:grey;
 	font-size: 20px;
 }
 
@@ -135,7 +135,7 @@ html, body {
 .welcomeTitle {
     font-size: 50px;
     text-align: center;
-    margin-top:25%;
+    margin-top:15%;
     
     font-size:70px;
     font-family: 'Russo One', sans-serif;
@@ -144,17 +144,20 @@ html, body {
 
 .center {
     top: 60%; 
-    margin-top:10%;
+    margin-top:5%;
     text-align: center;
+    margin-bottom: 10%;
+    color: white!important;
+
 }
 
 
 
 .links > a {
-    color: #636b6f;
+    color: white;
     padding: 0 25px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -164,15 +167,6 @@ html, body {
     margin-bottom: 30px;
 }
 
-.welcomeDiv {
-  	width: 200px;
-	position: absolute;
-	top: 20%; 
-	margin-top:-100px;
-	left: 95%; 
-	margin-left:-200px;
-	text-align: center;
-}
  
 h2 {
 	font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
@@ -191,12 +185,19 @@ h2 {
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 2%;
 }
+
+.welcomeDiv {
+  	width: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}
  
 .welcomeLi:last-child {
   	border: none;
 }
  
-.welcomeLi a {
+.welcomeLi span {
 	text-decoration: none;
 	color: #000;
 	display: block;
@@ -217,7 +218,7 @@ h2 {
 	transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
-.welcomeLi a:hover {
+.welcomeLi span:hover {
 	font-size: 28px;
 	background: #f6f6f6;
 }

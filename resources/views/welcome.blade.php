@@ -9,9 +9,11 @@
         <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="animated bungee welcomeTitle">SlopeCast</div> 
+        <div>
+            <div id="gradientplaceholder">.</div>
+            <div class="animated bungee welcomeTitle">SlopeCast</div> 
             @if (Route::has('login'))
-                <div class=" center links">
+                <div class="center links">
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -20,14 +22,14 @@
                     @endif
                 </div>
             @endif
-        </div>
-        <div class="welcomeDiv">
-            <h3>Supported Resorts</h3>
-            <ul class="welcomeUl">
-                @foreach ($resorts as $resort)
-                <li class="welcomeLi"><a href="">{{ $resort->name }}</a></li>
-                @endforeach
-            </ul>
+            <div class="welcomeDiv">
+                <h3>Supported Resorts</h3>
+                <ul class="welcomeUl">
+                    @foreach ($resorts as $resort)
+                    <li class="welcomeLi"><span>{{ $resort->name }}</span></li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </body>
 </html>
