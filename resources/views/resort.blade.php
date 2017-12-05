@@ -7,7 +7,7 @@
 <p class="siteNav"><a href="{{ url('resort') }}">Home</a> / {{ $resort->name }}</p>
 <link href="/css/style.css" rel="stylesheet">
 <link href="/css/mimic.css-master/mimic.min.css">
-<h1 style="color:white">{{ $resort->name }}</h1>
+<h1 class="resortName">{{ $resort->name }}</h1>
 <h5>{{ $resort->location }}</h3>
 <div class="tableDiv">
 	<table class="table resortTable">
@@ -102,11 +102,11 @@
 				<div class="row">
 		        	<select name="rating" class="form-control rating" required>
 		        		<option disabled selected value style="display:none">Select</option>
-						<option class="star" value="1">&#9733;</option>
-						<option class="star" value="2">&#9733;&#9733;</option>
-						<option class="star" value="3">&#9733;&#9733;&#9733;</option>
+		        		<option class="star" value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
 						<option class="star" value="4">&#9733;&#9733;&#9733;&#9733;</option>
-						<option class="star" value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+						<option class="star" value="3">&#9733;&#9733;&#9733;</option>
+						<option class="star" value="2">&#9733;&#9733;</option>
+						<option class="star" value="1">&#9733;</option>
 		        	</select>
 		        <div class="row">
 	        		<button type="submit" class="form-control btn btn-primary postButton">POST</button>
