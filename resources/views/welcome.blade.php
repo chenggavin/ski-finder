@@ -22,7 +22,7 @@
             @endif
         </div>
         <div class="welcomeDiv">
-            <h3> Supported Resorts</h3>
+            <h3>Supported Resorts</h3>
             <ul class="welcomeUl">
                 @foreach ($resorts as $resort)
                 <li class="welcomeLi"><a href="">{{ $resort->name }}</a></li>

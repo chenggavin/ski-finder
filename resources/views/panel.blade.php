@@ -24,7 +24,7 @@
                                 <a href="{{ url('resort', [$resort->slug]) }}">
                                     <img src="{{ asset('img/' . $resort->img) }}" alt="image" class="img-responsive">
                                 </a>
-                                <a href="{{ url('resort', [$resort->slug]) }}">
+                                <a class="resortPanel" href="{{ url('resort', [$resort->slug]) }}">
                                     <h3>{{ $resort->name }}</h3>
                                     <p>{{ $resort->location }}</p>
                                 </a>

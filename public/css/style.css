@@ -16,6 +16,8 @@ h1, h5 {
 
 h3 {
 	font-family: 'Russo One', sans-serif;
+	color:black;
+	font-size: 20px;
 }
 
 ul {
@@ -26,10 +28,13 @@ ul {
 	margin-left: 5%;
 	font-size: 18px;
 }
+.siteNav a {
+	color:#F8FAFF;
+}
 
 .title {
 	font-family: 'Russo One', sans-serif;
-	color:white !important;
+	color:white;
 	font-size: 30px;
 }
 .attribute {
@@ -59,7 +64,7 @@ img {
 }
 
 .thumbnail:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .3);
 
 }
 .searchname {
@@ -67,7 +72,9 @@ img {
 	display: inline-block;
 }
 
-
+.dropdown-toggle {
+	color:white !important;
+}
 
 h3 {
 	text-align: center;
@@ -77,11 +84,18 @@ h3 {
 .tableDiv {
 	margin-top:5%;
 }
+.resortPanel:link {
+	text-decoration: none;
+}
+.addmore {
+	font-family: 'Russo One', sans-serif;
+}
 
 .resortTable {
 	width:40%;
 	margin:auto;
 	font-size: 16px;
+	color: #3E4348;
 }
 
 .resortName {
@@ -203,7 +217,6 @@ h2 {
 	transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
- 
 .welcomeLi a:hover {
 	font-size: 28px;
 	background: #f6f6f6;
@@ -219,6 +232,8 @@ h2 {
 
 .star {
 	color:#EFDC05;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffc952;
 }
 
 
@@ -245,7 +260,7 @@ iframe {
 	margin-left:auto;
 }
 .postName {
-
+	font-weight: bold;
 }
 .postBody {
 	font-size: 12px;
