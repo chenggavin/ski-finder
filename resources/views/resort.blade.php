@@ -7,7 +7,7 @@
 <p class="siteNav"><a href="{{ url('resort') }}">Home</a> / {{ $resort->name }}</p>
 <link href="/css/style.css" rel="stylesheet">
 <link href="/css/mimic.css-master/mimic.min.css">
-<h1 style="color:#30A9DE">{{ $resort->name }}</h1>
+<h1 style="color:white">{{ $resort->name }}</h1>
 <h5>{{ $resort->location }}</h3>
 <div class="tableDiv">
 	<table class="table resortTable">
@@ -43,7 +43,7 @@
 	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">New Snow last 24hrs(in)</span></td>
-		        <td>{{ $resort->new_snow_in }}</td>
+		        <td>{{ $resort->new_snow_in }}"</td>
 	      	</tr>
 	      	<tr>
 		        <td><span class="attribute">Upper Snow(in)</span></td>
@@ -62,7 +62,7 @@
 		        <td>
 		        	@if (!empty($avgStar))
 			        	@for ($i = 0; $i < $avgStar; $i++)
-						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star star" aria-hidden="true"></i>
 						@endfor
 					@else 
 						No Current Reviews
@@ -86,7 +86,7 @@
 			@foreach ($reviews as $review)
 				<li class="postName">{{ $review->name}}
 					@for ($i = 0; $i < ($review->stars); $i++)
-					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star star" aria-hidden="true"></i>
 					@endfor
 					</li>
 				<li class="postBody">"{{ $review->body }}"</li>
@@ -102,11 +102,11 @@
 				<div class="row">
 		        	<select name="rating" class="form-control rating" required>
 		        		<option disabled selected value style="display:none">Select</option>
-						<option value="1">&#9733;</option>
-						<option value="2">&#9733;&#9733;</option>
-						<option value="3">&#9733;&#9733;&#9733;</option>
-						<option value="4">&#9733;&#9733;&#9733;&#9733;</option>
-						<option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+						<option class="star" value="1">&#9733;</option>
+						<option class="star" value="2">&#9733;&#9733;</option>
+						<option class="star" value="3">&#9733;&#9733;&#9733;</option>
+						<option class="star" value="4">&#9733;&#9733;&#9733;&#9733;</option>
+						<option class="star" value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
 		        	</select>
 		        <div class="row">
 	        		<button type="submit" class="form-control btn btn-primary postButton">POST</button>

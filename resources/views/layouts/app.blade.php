@@ -69,5 +69,7 @@
 
         @yield('content')
     </div>
+    <div class="banner"></div>
+</section>
 </body>
 </html>

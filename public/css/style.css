@@ -4,6 +4,27 @@
 
 
 }
+body {
+  /* Base64 encoded transparent gif */
+   background: linear-gradient(#30A9DE, white);
+}
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/mountainfooter.jpg) no-repeat center center;
+    background-size: cover;
+}
+.banner::after {
+  content: "";
+  background: url(../img/mountainfooter.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
 h1, h5 {
 	text-align: center;
@@ -24,7 +45,7 @@ ul {
 
 .title {
 	font-family: 'Russo One', sans-serif;
-	color:#30A9DE !important;
+	color:white !important;
 	font-size: 30px;
 }
 .attribute {
@@ -76,6 +97,7 @@ h3 {
 .resortTable {
 	width:40%;
 	margin:auto;
+	font-size: 16px;
 }
 
 .searchDiv {
@@ -110,7 +132,7 @@ html, body {
     font-size: 50px;
     text-align: center;
     margin-top:25%;
-    color:lightblue;
+    
     font-size:70px;
     font-family: 'Russo One', sans-serif;
 
@@ -204,6 +226,13 @@ h2 {
 	float: right;
 	display: inline-block;
 }
+
+.star {
+	color:#EFDC05;
+}
+
+
+
 .addsearch:hover {
 	transform: scale(1.2) !important;
 }
