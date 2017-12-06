@@ -154,7 +154,7 @@ class ResortsTableSeeder extends Seeder
         DB::table('resorts')->insert([
             'name' => 'Steamboat Springs',
             'slug' => 'steamboat-springs',
-            'location' => 'Steamboat Springs, CO',
+            'location' => 'Steamboat Springs, Colorado',
             'open' => true,
             'conditions' => 'Powder, machine groomed',
             'new_snow_in' => '0.8',
@@ -189,7 +189,7 @@ class ResortsTableSeeder extends Seeder
             'name' => 'Aspen Snowmass',
             'slug' => 'aspen-snowmass',
             'last_snow' => '12/03/2017',
-            'location' => 'Snowmass Village, CO',
+            'location' => 'Snowmass Village, Colorado',
             'open' => true,
             'conditions' => 'Packed Powder',
             'new_snow_in' => '0.0',
@@ -201,6 +201,23 @@ class ResortsTableSeeder extends Seeder
             'website' => 'https://www.aspensnowmass.com/',
             'map' => 'ChIJ1Wlr9XZIQIcRvaHyQxXwkXE',
             'zip' => 81615
+        ]);
+        DB::table('resorts')->insert([
+            'name' => 'Mammoth Mountain',
+            'slug' => 'mammoth-mountain',
+            'last_snow' => '11/22/2017',
+            'location' => 'Mammoth Lakes, California',
+            'open' => true,
+            'conditions' => 'Packed Powder',
+            'new_snow_in' => '0.0',
+            'pct_open' => '58',
+            'upper_snow' =>20,
+            'lower_snow' =>3,
+            'lifts_open' => '14/28',
+            'img' => 'aspen.jpg',
+            'website' => 'https://www.mammothmountain.com/',
+            'map' => 'ChIJDZ70RiYNloARpK9pFMnaBVg',
+            'zip' => 93546
         ]);
 
 
