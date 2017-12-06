@@ -70,7 +70,7 @@
 <br>
 <hr width="60%">
 	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12" align="center">
+		<div class="col-sm-12" align="center">
 			<iframe frame src="https://www.google.com/maps/embed/v1/place?q=place_id:{{ $resort->map }}&key=AIzaSyDQ3zG49Y7wgcBOK1fUDDRCVF_TuRXSH9I" allowfullscreen>
 			</iframe>
 		</div>
@@ -81,10 +81,10 @@
 			<div>
 				<form method="post" action="/review/{{ $resort->slug}}">
 				    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-			      	<div class="col-sm-10 col-md-10 col-lg-10">
+			      	<div class="col-sm-10">
 				        <textarea class="form-control" rows="3" required name="body" placeholder="What did you think?"></textarea>
 				    </div>
-					<div class="col-sm-2 col-md-2 col-lg-2" align="center">
+					<div class="col-sm-2" align="center">
 						<div class="row">
 				        	<select name="rating" class="form-control rating" required>
 				        		<option disabled selected value style="display:none">Select</option>
@@ -94,24 +94,24 @@
 								<option class="star" value="2">&#9733;&#9733;</option>
 								<option class="star" value="1">&#9733;</option>
 				        	</select>
-				        <div class="row">
-			        		<button type="submit" class="form-control btn btn-primary postButton">POST</button>
-			        	</div>
+				        		<button type="submit" class="form-control btn btn-primary postButton">POST</button>
 			        	</div>
 				    </div>
 				</form>
 			</div>
-			<ul>
-				@foreach ($reviews as $review)
-					<li class="postName">{{ $review->name}}
-						@for ($i = 0; $i < ($review->stars); $i++)
-						<i class="fa fa-star star" aria-hidden="true"></i>
-						@endfor
-						</li>
-					<li style="font-size: 10px;"> {{ $review->created_at->toDayDateTimeString() }}</li>
-					<li class="postBody">"{{ $review->body }}"</li>
-				@endforeach
-			</ul>
+			<div class="row" style="margin-top:25%">
+				<ul>
+					@foreach ($reviews as $review)
+						<li class="postName">{{ $review->name}}
+							@for ($i = 0; $i < ($review->stars); $i++)
+							<i class="fa fa-star star" aria-hidden="true"></i>
+							@endfor
+							</li>
+						<li style="font-size: 10px;"> {{ $review->created_at->toDayDateTimeString() }}</li>
+						<li class="postBody">"{{ $review->body }}"</li>
+					@endforeach
+				</ul>
+			</div>
 		</div>
 
 @endsection
