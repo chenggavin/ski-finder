@@ -161,7 +161,7 @@ class ResortsTableSeeder extends Seeder
             'zip' => 80487
         ]);
         DB::table('resorts')->insert([
-            'name' => 'Key Stone',
+            'name' => 'Keystone',
             'slug' => 'key-stone',
             'location' => 'Keystone, CO',
             'open' => true,
