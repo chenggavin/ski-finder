@@ -2,6 +2,17 @@
 
 Updated ski resort app that displays current data about selected resorts. Data includes current weather conditions and resort status. Users can choose their own personal selection of resorts to save and have info for.
 
+## Technologies 
+
+Laravel, PHP, HTML, CSS, JavaScript, Bootstrap
+
+
+## API Used
+
+1. Weather Unlocked
+2. Google Maps 
+3. Open Weather 
+
 ## Installion Instructions
 
 1. $ git clone https://github.com/chenggavin/slopeCast.git

@@ -177,22 +177,6 @@ class ResortsTableSeeder extends Seeder
             'zip' => 80435
         ]);
         DB::table('resorts')->insert([
-            'name' => 'Jay Peak',
-            'slug' => 'jay-peak',
-            'location' => 'Jay, Vermont',
-            'open' => true,
-            'conditions' => 'Machine groomed',
-            'new_snow_in' => '0.0',
-            'pct_open' => '29.4',
-            'upper_snow' =>10,
-            'lower_snow' =>5,
-            'lifts_open' => '3/9',
-            'img' => 'jaypeak.jpg',
-            'website' => 'https://www.keystoneresort.com/',
-            'map' => 'ChIJbSuHBNYOtkwRQdBBr71vzSM',
-            'zip' => 05859
-        ]);
-        DB::table('resorts')->insert([
             'name' => 'Aspen Snowmass',
             'slug' => 'aspen-snowmass',
             'location' => 'Snowmass Village, CO',
