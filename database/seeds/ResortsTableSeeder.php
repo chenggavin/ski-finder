@@ -155,8 +155,8 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>16,
             'lower_snow' =>10,
             'lifts_open' => '2/18',
-            'img' => 'steamboat.jpg',
-            'website' => 'https://www.vail.com/',
+            'img' => 'steamboat.png',
+            'website' => 'https://www.steamboat.com/',
             'map' => 'ChIJYUZWCYF7QocRfc9uSNGjqBs',
             'zip' => 80487
         ]);
@@ -169,12 +169,12 @@ class ResortsTableSeeder extends Seeder
             'new_snow_in' => '0.8',
             'pct_open' => '20',
             'upper_snow' =>16,
-            'lower_snow' =>10,
-            'lifts_open' => '2/18',
-            'img' => 'steamboat.jpeg',
-            'website' => 'https://www.vail.com/',
-            'map' => 'ChIJYUZWCYF7QocRfc9uSNGjqBs',
-            'zip' => 80487
+            'lower_snow' =>5,
+            'lifts_open' => '8/20',
+            'img' => 'keystone.jpg',
+            'website' => 'https://www.keystoneresort.com/',
+            'map' => 'ChIJg2V85yRXaocRYfovfYgMZ0M',
+            'zip' => 80435
         ]);
 
 
