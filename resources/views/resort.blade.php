@@ -78,7 +78,7 @@
 		<!-- User Resort Reviews -->
 		<div class="reviewDiv">
 			<h4 class="reviewTitle">User Reviews</h4>
-			<div class="row">
+			<div>
 				<form method="post" action="/review/{{ $resort->slug}}">
 				    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 			      	<div class="col-sm-10 col-md-10 col-lg-10">
