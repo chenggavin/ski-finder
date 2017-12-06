@@ -187,7 +187,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>10,
             'lower_snow' =>5,
             'lifts_open' => '3/9',
-            'img' => 'keystone.jpg',
+            'img' => 'jaypeak.jpg',
             'website' => 'https://www.keystoneresort.com/',
             'map' => 'ChIJbSuHBNYOtkwRQdBBr71vzSM',
             'zip' => 05859
@@ -203,7 +203,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>9,
             'lower_snow' =>3,
             'lifts_open' => '8/43',
-            'img' => 'keystone.jpg',
+            'img' => 'aspen.jpg',
             'website' => 'https://www.aspensnowmass.com/',
             'map' => 'ChIJ1Wlr9XZIQIcRvaHyQxXwkXE',
             'zip' => 81615
