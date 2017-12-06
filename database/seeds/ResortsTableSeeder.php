@@ -144,6 +144,22 @@ class ResortsTableSeeder extends Seeder
             'map' => 'ChIJB89dUQVwaocRxKOafh_AzMk',
             'zip' => 81657
         ]);
+        DB::table('resorts')->insert([
+            'name' => 'Steamboat Springs',
+            'slug' => 'steamboat-springs',
+            'location' => 'steamboat-springs, CO',
+            'open' => true,
+            'conditions' => 'Powder, machine groomed',
+            'new_snow_in' => '0.8',
+            'pct_open' => '3.6',
+            'upper_snow' =>16,
+            'lower_snow' =>10,
+            'lifts_open' => '2/18',
+            'img' => 'steamboat.png',
+            'website' => 'https://www.vail.com/',
+            'map' => 'ChIJYUZWCYF7QocRfc9uSNGjqBs',
+            'zip' => 80487
+        ]);
 
 
 
