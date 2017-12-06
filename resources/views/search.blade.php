@@ -4,8 +4,6 @@
 
 <link href="/css/style.css" rel="stylesheet">
 <p class="siteNav"><a href="{{ url('resort') }}">Home</a> / Add Resort</p>
-
-
 <table class="table searchTable">
 	    <tbody>
 			@foreach ($resorts as $resort)

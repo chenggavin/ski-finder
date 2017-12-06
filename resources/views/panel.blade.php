@@ -36,6 +36,6 @@
         @endforeach
         @endif
     </div> <!-- end container -->
-    <h3><a class="addmore" href="/resort/search">Add Resort</a></h3>
+    <h3><a class="addmore" href="/resort/search"><button class="btn btn-primary btn-lg">Add Resort +</button></a></h3>
 
 @endsection
