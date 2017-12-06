@@ -11,7 +11,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One|News+Cycle|Russo+One" rel="stylesheet">
-    <link rel="shortcut icon" href="{{{ asset('img/mountains-120.png') }}}">
+    <link rel="shortcut icon" href="../img/mountains-120.png">
 </head>
 <body>
     <div id="app">

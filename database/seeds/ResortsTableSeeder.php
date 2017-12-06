@@ -147,7 +147,7 @@ class ResortsTableSeeder extends Seeder
         DB::table('resorts')->insert([
             'name' => 'Steamboat Springs',
             'slug' => 'steamboat-springs',
-            'location' => 'steamboat-springs, CO',
+            'location' => 'Steamboat Springs, CO',
             'open' => true,
             'conditions' => 'Powder, machine groomed',
             'new_snow_in' => '0.8',
@@ -155,12 +155,27 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>16,
             'lower_snow' =>10,
             'lifts_open' => '2/18',
-            'img' => 'steamboat.png',
+            'img' => 'steamboat.jpg',
             'website' => 'https://www.vail.com/',
             'map' => 'ChIJYUZWCYF7QocRfc9uSNGjqBs',
             'zip' => 80487
         ]);
-
+        DB::table('resorts')->insert([
+            'name' => 'Key Stone',
+            'slug' => 'key-stone',
+            'location' => 'Keystone, CO',
+            'open' => true,
+            'conditions' => 'Packed powder',
+            'new_snow_in' => '0.8',
+            'pct_open' => '20',
+            'upper_snow' =>16,
+            'lower_snow' =>10,
+            'lifts_open' => '2/18',
+            'img' => 'steamboat.jpeg',
+            'website' => 'https://www.vail.com/',
+            'map' => 'ChIJYUZWCYF7QocRfc9uSNGjqBs',
+            'zip' => 80487
+        ]);
 
 
     }

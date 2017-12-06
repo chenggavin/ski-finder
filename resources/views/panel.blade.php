@@ -11,7 +11,7 @@
             <div class="row">
                 @foreach ($resorts as $resort)
                     <div class="col-md-3">
-                        <div class="thumbnail">
+                        <div class="thumbnail" style="border:1px solid black; height: 300px">
                             <form method="post" action="/resort/{{ $resort->id }}/delete">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
@@ -21,7 +21,7 @@
                             </form>
                             <div class="caption text-center">
                                 <a href="{{ url('resort', [$resort->slug]) }}">
-                                    <img src="{{ asset('img/' . $resort->img) }}" alt="image" class="img-responsive">
+                                    <img src="{{ asset('img/' . $resort->img) }}" alt="image" width="200" class="img-responsive {{$resort->slug}}">
                                 </a>
                                 <a class="resortPanel" href="{{ url('resort', [$resort->slug]) }}">
                                     <h3>{{ $resort->name }}</h3>
