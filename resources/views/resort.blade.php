@@ -99,7 +99,7 @@
 				    </div>
 				</form>
 			</div>
-			<div class="row" style="margin-top:25%">
+			<div class="row" style="margin-top:20%">
 				<ul>
 					@foreach ($reviews as $review)
 						<li class="postName">{{ $review->name}}

@@ -11,7 +11,7 @@
             <div class="row">
                 @foreach ($resorts as $resort)
                     <div class="col-md-3">
-                        <div class="thumbnail" style="border:1px solid black; height: 300px">
+                        <div class="thumbnail">
                             <form method="post" action="/resort/{{ $resort->id }}/delete">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
