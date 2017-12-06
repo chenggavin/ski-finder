@@ -270,7 +270,7 @@ iframe {
 	/*Reviews*/
 
 .reviewDiv {
-	width: 60%;
+	width: 50%;
 	margin: 5%;
 	margin-left:auto;
 	margin-right: auto;
@@ -281,7 +281,7 @@ iframe {
 	font-weight: bold;
 }
 .postBody {
-	font-size: 12px;
+	font-size: 16px;
 	margin-left:3%;
 	margin-bottom:3%;
 
@@ -293,6 +293,7 @@ iframe {
 }
 textarea {
 	resize: none;
+	margin-bottom: 3%;
 }
 
 .postButton {
@@ -313,7 +314,13 @@ textarea {
 		margin-bottom: 3%;
 	}
 	.rating {
+		width: 85%;
+	}
+	.reviewDiv {
 		width: 90%;
+	}
+	.postButton {
+		margin-bottom: 5%;
 	}
     .center {
         left: 62% !important; 

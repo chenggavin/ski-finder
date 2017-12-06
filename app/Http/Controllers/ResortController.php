@@ -73,10 +73,9 @@ class ResortController extends Controller
     // Display reviews from users
     $reviews = \App\Review::
         select('reviews.user_id', 'reviews.resort_slug', 'reviews.stars', 'reviews.body', 'reviews.created_at', 'users.name')->
-        join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
+        join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->orderBy('created_at', 'desc')->
         get();
 
-    // return $reviews->first();
     $reviewStars = \App\Review::
         select( 'reviews.stars')->
         join('users', 'users.id', '=', 'reviews.user_id')->where('resort_slug', $slug)->
