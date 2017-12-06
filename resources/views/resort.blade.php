@@ -113,8 +113,6 @@
 					<li class="postBody">"{{ $review->body }}"</li>
 				@endforeach
 			</ul>
-			<hr>
-
 		</div>
 	</div>
 
