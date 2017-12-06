@@ -76,7 +76,6 @@
 		</div>
 	</div>
 		<!-- User Resort Reviews -->
-	<div class="row">
 		<div class="reviewDiv">
 			<h4 class="reviewTitle">User Reviews</h4>
 			<div class="row">
@@ -114,7 +113,6 @@
 				@endforeach
 			</ul>
 		</div>
-	</div>
 
 @endsection
 
