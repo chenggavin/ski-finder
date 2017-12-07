@@ -214,7 +214,7 @@ class ResortsTableSeeder extends Seeder
             'upper_snow' =>20,
             'lower_snow' =>3,
             'lifts_open' => '14/28',
-            'img' => 'aspen.jpg',
+            'img' => 'mammoth.png',
             'website' => 'https://www.mammothmountain.com/',
             'map' => 'ChIJDZ70RiYNloARpK9pFMnaBVg',
             'zip' => 93546
