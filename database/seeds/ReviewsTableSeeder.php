@@ -22,9 +22,25 @@ class ReviewsTableSeeder extends Seeder
         ]);
         DB::table('reviews')->insert([
             'user_id' => '2',
-            'resort_slug' => 'vail',
+            'resort_slug' => 'steamboat-springs',
+            'stars' => 5,
+            'body' => 'Lines were decent, scenery was great!',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ]);
+        DB::table('reviews')->insert([
+            'user_id' => '3',
+            'resort_slug' => 'snowshoe',
             'stars' => 3,
-            'body' => 'Meh.. could be better',
+            'body' => 'For what it costs me to drive over there, I would of rather flew out west.',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ]);
+        DB::table('reviews')->insert([
+            'user_id' => '3',
+            'resort_slug' => 'snowshoe',
+            'stars' => 4,
+            'body' => 'It is perfect, but it is not very north. It is perfect for the south',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
