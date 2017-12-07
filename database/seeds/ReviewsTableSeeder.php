@@ -37,8 +37,8 @@ class ReviewsTableSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
         DB::table('reviews')->insert([
-            'user_id' => '3',
-            'resort_slug' => 'snowshoe',
+            'user_id' => '4',
+            'resort_slug' => 'perfect-north',
             'stars' => 4,
             'body' => 'It is perfect, but it is not very north. It is perfect for the south',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
