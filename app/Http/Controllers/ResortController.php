@@ -158,9 +158,8 @@ class ResortController extends Controller
         foreach ($userResorts as $ids) {
             array_push($currentResortsIds, $ids->id);
         }
-
         $resorts = \App\Resort::whereNotIn('id', $currentResortsIds)->orderBy('name', 'asc')->get();
-        
+
         return view('search', compact('resorts'));
     }
 
