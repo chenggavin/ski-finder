@@ -21,8 +21,8 @@ class CreateResortsTable extends Migration
             $table->boolean('open');
             $table->string('conditions')->nullable();
             $table->decimal('new_snow_in', 3,1)->nullable();
-            $table->decimal('pct_open', 3,1)->nullable();
-            $table->decimal('upper_snow', 3,1)->nullable();
+            $table->string('pct_open')->nullable();
+            $table->decimal('upper_snow', 4,1)->nullable();
             $table->decimal('lower_snow', 3,1)->nullable();
             $table->string('last_snow')->nullable();
             $table->string('lifts_open')->nullable();
